@@ -107,7 +107,7 @@ def get_model(model_name):
     )
 
 
-def saveAnswers(x, index, responses):
+def save_answers(x, index, responses):
     x["responseA"] = responses["A"][index].outputs[0].text
     x["responseB"] = responses["B"][index].outputs[0].text
     x["responseC"] = responses["C"][index].outputs[0].text
@@ -123,13 +123,13 @@ def generate_response(model, dataset, sampling_params):
     responses["C"] = model.generate(dataset["promptC"], sampling_params)
     responses["D"] = model.generate(dataset["promptD"], sampling_params)
 
-    dataset = dataset.map(lambda x, i: saveAnswers(
+    dataset = dataset.map(lambda x, i: save_answers(
         x, i, responses), with_indices=True)
 
     return dataset
 
 
-def parseAnswer(x):
+def parse_answer(x):
     x["scoreA"] = fuzz.partial_ratio(
         x["gt-email"],
         x["responseA"],
@@ -154,7 +154,7 @@ def parseAnswer(x):
 
 
 def evaluate_responses(dataset):
-    dataset = dataset.map(parseAnswer)
+    dataset = dataset.map(parse_answer)
 
     matches = {}
     matches["A"] = len(dataset.filter(lambda x: x["scoreA"] >= 80))
