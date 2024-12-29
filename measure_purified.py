@@ -188,8 +188,8 @@ def check_results_file(output_dir):
 
 
 def save_results(results, file_name):
-    with open(file_name, "w") as outfile:
-        print(json.dumps(results), file=outfile)
+    with open(file_name, "a") as outfile:
+        outfile.write(json.dumps(results) + "\n")
 
 
 def run_measure_purified(args):
