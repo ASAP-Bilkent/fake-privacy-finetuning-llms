@@ -1,5 +1,6 @@
 import argparse
 import os
+from types import SimpleNamespace
 
 from merge_peft import run_merge_peft
 from measure_purified import run_measure_purified
@@ -18,33 +19,35 @@ def parse_argument():
     return parser.parse_args()
 
 
-def process_checkpoint(args):
-    checkpoint_path = args.model
-    temporaryStorage = args.temp
-
-    run_merge_peft({
+def process_checkpoint(checkpoint_path, temporaryStorage, dataset):
+    run_merge_peft(SimpleNamespace(**{
         "model": checkpoint_path,
         "save_dir": temporaryStorage,
         "is_opt": True
-    })
+    }))
 
-    run_measure_purified({
+    run_measure_purified(SimpleNamespace(**{
         "model": temporaryStorage,
         "output_dir": checkpoint_path,
-        "dataset": args.dataset
-    })
+        "dataset": dataset,
+        "top_k": 100,
+        "max_tokens": 15
+    }))
 
     print(checkpoint_path + "has been finished")
 
 
-def traverse_checkpoints(base_path):
+def traverse_checkpoints(args):
+    base_path = args.model
+
     for root, dirs, _ in os.walk(base_path):
         for dir_name in dirs:
             if dir_name.startswith("checkpoint-"):
                 checkpoint_path = os.path.join(root, dir_name)
                 if (not os.path.isfile(os.path.join(checkpoint_path, 'results_purified.jsonl'))):
                     print(checkpoint_path + ' is under process.')
-                    process_checkpoint(checkpoint_path)
+                    process_checkpoint(
+                        checkpoint_path, args.temp, args.dataset)
 
 
 if __name__ == "__main__":
