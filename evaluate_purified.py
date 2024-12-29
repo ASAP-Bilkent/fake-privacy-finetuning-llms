@@ -5,7 +5,21 @@ from merge_peft import run_merge_peft
 from measure_purified import run_measure_purified
 
 
-def process_checkpoint(checkpoint_path):
+def parse_argument():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("-m", "--model", help="Model to be ran.",
+                        default="./pythia-2.8b")
+    parser.add_argument("-t", "--temp", help="temporary storage in which the adapter and the base model will be merged.",
+                        default="./tempMerged")
+    parser.add_argument(
+        "-d", "--dataset", help="the path of dataset", type=str, default="./enron.jsonl")
+
+    return parser.parse_args()
+
+
+def process_checkpoint(args):
+    checkpoint_path = args.model
     temporaryStorage = args.temp
 
     run_merge_peft({
@@ -16,7 +30,8 @@ def process_checkpoint(checkpoint_path):
 
     run_measure_purified({
         "model": temporaryStorage,
-        "output_dir": checkpoint_path
+        "output_dir": checkpoint_path,
+        "dataset": args.dataset
     })
 
     print(checkpoint_path + "has been finished")
@@ -33,12 +48,5 @@ def traverse_checkpoints(base_path):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument("-m", "--model", help="Model to be ran.",
-                        default="./pythia-2.8b")
-    parser.add_argument("-t", "--temp", help="temporary storage in which the adapter and the base model will be merged.",
-                        default="./tempMerged")
-
-    args = parser.parse_args()
-    traverse_checkpoints(args.model)
+    args = parse_argument()
+    traverse_checkpoints(args)

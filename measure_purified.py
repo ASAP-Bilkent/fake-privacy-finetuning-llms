@@ -54,13 +54,15 @@ def parse_args():
                         type=int, default=100)
     parser.add_argument("-mt", "--max_tokens", help="add vllm doc",
                         type=int, default=15)
+    parser.add_argument(
+        "-d", "--dataset", help="the path of dataset", type=str, default="./enron.jsonl")
 
     return parser.parse_args()
 
 
-def get_dataset():
+def get_dataset(data_path):
     # TODO: read this from the args.
-    dataset = load_dataset("json", data_files="./enron.jsonl", split="train")
+    dataset = load_dataset("json", data_files=data_path, split="train")
     dataset = dataset.select(range(1000))
 
     return dataset
@@ -192,7 +194,7 @@ def save_results(results, file_name):
 
 def run_measure_purified(args):
     print("Loading the dataset.")
-    dataset = get_dataset()
+    dataset = get_dataset(args.dataset)
 
     print("Preparing the dataset.")
     dataset = prepare_dataset(dataset)
