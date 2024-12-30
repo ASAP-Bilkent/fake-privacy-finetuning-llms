@@ -1,3 +1,4 @@
+import re
 from datasets import load_dataset
 from transformers import AutoTokenizer
 from vllm import LLM, SamplingParams
@@ -225,7 +226,7 @@ def run_measure_purified(args):
 
         results = {
             "matches": matches,
-            "model": args.model,
+            "model": re.search(r"/([^/]+)/self-generated.*checkpoint-\d+", args.output_dir).group(1) if re.search(r"/([^/]+)/self-generated.*checkpoint-\d+", args.output_dir) else None,
             "temperature": temperature,
             "top_k": args.top_k
         }

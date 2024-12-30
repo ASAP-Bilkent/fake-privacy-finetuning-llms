@@ -5,6 +5,7 @@ import json
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
+import pandas as pd
 
 
 HOME_DIR = "/home/c01mili/CISPA-projects/llm_ftsec-2024/atilla/enron"
@@ -15,8 +16,8 @@ INCLUCE_ORIGINAL = False
 FINETUNE_TYPE = "self-generated-pissa-pythia-12b"
 
 BASE_PATHES = [
-    'opt-1.3b',
-    'opt-2.7b',
+    '/home/c01mili/CISPA-projects/llm_ftsec-2024/atilla/enron/opt-1.3b',
+    '/home/c01mili/CISPA-projects/llm_ftsec-2024/atilla/enron/opt-2.7b',
 ]
 
 BASE_RESULTS = [
@@ -85,15 +86,15 @@ def perplexity_epoch(data, name):
              label=name, linestyle=linestyle, color=color)
 
 
-def parseResults(path: str):
-    content = ""
-    with open(path, 'r') as file:
-        content = file.read()
+def parse_results(path: str):
+    lines = []
 
-    lines = content.split('\n')
+    with open(path, 'r') as fs:
+        lines = fs.read().split('\n')
+        print(lines)
 
-    path = path.replace(HOME_DIR, '.')  # to fix atilla's logic
     # Extract model info
+    path = path.replace(HOME_DIR, '.')  # to fix atilla's logic
     path = re.search('[^\.]*\./(.*)', path).group(1)
     path = path.split('/')
 
@@ -110,6 +111,7 @@ def parseResults(path: str):
             continue
 
         processed_line = json.loads(line)
+        print(processed_line)
 
         record = {}
         record["base_model"] = base_model
@@ -119,7 +121,6 @@ def parseResults(path: str):
         record["checkpoint"] = checkpoint
         record["temperature"] = processed_line["temperature"]
         record["top-k"] = processed_line["top_k"]
-        record["template_type"] = None  # TODO: add
 
         for key in processed_line["matches"]:
             if key != "total":
@@ -128,6 +129,7 @@ def parseResults(path: str):
                 tmp_record["success"] = processed_line["matches"][key]
                 result_lines.append(tmp_record)
 
+    print(result_lines)
     return result_lines
 
 
@@ -293,14 +295,28 @@ def draw_template_base(template_type, deduped, dataset, name):
     fig.savefig(name + '.png')
 
 
+def prepare_dataset(raw_data):
+    # Create a Dataset object
+    print(raw_data)
+    df = pd.DataFrame(raw_data)
+
+    df.drop_duplicates(
+        subset=['base_model', 'finetune_type', 'weight_decay', 'learning_rate',
+                'checkpoint', 'template_type', 'temperature', 'top-k'],
+        inplace=True
+    )
+
+    return Dataset.from_pandas(df)
+
+
 if __name__ == "__main__":
     results = []
     for base_path in BASE_PATHES:
         for root, _, files in os.walk(base_path):
             for file in files:
-                if file == "results_new.txt":
+                if file == "results_purified.jsonl":
                     file_path = os.path.join(HOME_DIR, root, file)
-                    for result in parseResults(file_path):
+                    for result in parse_results(file_path):
                         results.append(result)
 
     print(f"results array size: {len(results)}")
@@ -311,20 +327,7 @@ if __name__ == "__main__":
     # data_dict = {col: [row[i] for row in results]
                 #  for i, col in enumerate(column_names)}
 
-    # Create a Dataset object
-    dataset = Dataset.from_dict(results)
-
-    print(dataset)
-
-    df = dataset.to_pandas()
-
-    df.drop_duplicates(
-        subset=['base_model', 'finetune_type', 'weight_decay', 'learning_rate',
-                'checkpoint', 'template_type', 'temperature', 'top-k'],
-        inplace=True
-    )
-
-    dataset = Dataset.from_pandas(df)
+    dataset = prepare_dataset(results)
 
     for template in ['A', 'B', 'C', 'D']:
         print(template)
