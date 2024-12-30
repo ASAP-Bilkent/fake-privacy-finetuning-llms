@@ -1,6 +1,7 @@
 from datasets import Dataset
 import re
 import os
+import json
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
@@ -96,34 +97,36 @@ def parseResults(path: str):
     path = re.search('[^\.]*\./(.*)', path).group(1)
     path = path.split('/')
 
-    # Above gives the output ['pythia-1.4b', 'original', '0e+00_5e-05', 'checkpoint-208', 'results.txt']
-
-    enron_template = ".*(\[Enron[ABCD]\][^\n]*.*temperature.*top-k.*$)"
+    base_model = path[0]
+    finetune_type = path[1]
+    weight_decay = float(re.search("(.*)_.*", path[2]).group(1))
+    learning_rate = float(re.search(".*_(.*)", path[2]).group(1))
+    checkpoint = path[3]
 
     result_lines = []
 
-    for i in range(len(lines)):
-        line = lines[i]
-        line = re.search(enron_template, line, re.MULTILINE)
-        if line:
-            line = line.group(1)
-            result_lines.append(line)
+    for line in lines:
+        if not line:
+            continue
 
-    for i in range(len(result_lines)):
-        line = result_lines[i]
-        line_obj = []
-        line_obj.append(path[0])
-        line_obj.append(path[1])
-        line_obj.append(float(re.search("(.*)_.*", path[2]).group(1)))
-        line_obj.append(float(re.search(".*_(.*)", path[2]).group(1)))
-        line_obj.append(path[3])
-        line_obj.append(re.search("Enron([ABCD])", line).group(1))
-        line_obj.append(
-            float(re.search("temperature ([^\s]*) ", line).group(1)))
-        line_obj.append(int(re.search("top-k ([0-9\.]*)", line).group(1)))
-        line_obj.append(
-            int(re.search("(\d*)/1000$", line, re.MULTILINE).group(1)))
-        result_lines[i] = line_obj
+        processed_line = json.loads(line)
+
+        record = {}
+        record["base_model"] = base_model
+        record["finetune_type"] = finetune_type
+        record["weight_decay"] = weight_decay
+        record["learning_rate"] = learning_rate
+        record["checkpoint"] = checkpoint
+        record["temperature"] = processed_line["temperature"]
+        record["top-k"] = processed_line["top_k"]
+        record["template_type"] = None  # TODO: add
+
+        for key in processed_line["matches"]:
+            if key != "total":
+                tmp_record = record.copy()
+                tmp_record["template_type"] = key
+                tmp_record["success"] = processed_line["matches"][key]
+                result_lines.append(tmp_record)
 
     return result_lines
 
@@ -301,15 +304,15 @@ if __name__ == "__main__":
                         results.append(result)
 
     print(f"results array size: {len(results)}")
-    column_names = ['base_model', 'finetune_type', 'weight_decay', 'learning_rate',
-                    'checkpoint', 'template_type', 'temperature', 'top-k', 'success']
+    # column_names = ['base_model', 'finetune_type', 'weight_decay', 'learning_rate',
+                    # 'checkpoint', 'template_type', 'temperature', 'top-k', 'success']
 
     # Convert list of lists to list of dictionaries
-    data_dict = {col: [row[i] for row in results]
-                 for i, col in enumerate(column_names)}
+    # data_dict = {col: [row[i] for row in results]
+                #  for i, col in enumerate(column_names)}
 
     # Create a Dataset object
-    dataset = Dataset.from_dict(data_dict)
+    dataset = Dataset.from_dict(results)
 
     print(dataset)
 
