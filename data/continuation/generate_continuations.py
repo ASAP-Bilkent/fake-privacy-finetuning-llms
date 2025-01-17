@@ -7,13 +7,23 @@ import argparse
 import re
 import subprocess
 
-# TODO: this script needs refactoring
+
+def parse_argument():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-m", "--model", help="name of the model to be evaluated",
+                        default="EleutherAI/pythia-12b")
+    parser.add_argument("--top_k", help="add vllm doc",
+                        type=int, default=100)
+    parser.add_argument("-mt", "--max_tokens", help="add vllm doc",
+                        type=int, default=1000)
+    parser.add_argument("-d", "--data_set", help="dataset path",
+                        type=str, default="../enron.jsonl")
+    
+    return parser.parse_args()
+
 
 def main(args):
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    # device = torch.device("cpu")
-
-    os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
+    
     tokenizer = AutoTokenizer.from_pretrained(args.model)
 
     dataset = load_dataset("json", data_files=args.data_set, split="train")
@@ -73,15 +83,7 @@ def main(args):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-m", "--model", help="name of the model to be evaluated",
-                        default="EleutherAI/pythia-12b")
-    parser.add_argument("--top_k", help="add vllm doc",
-                        type=int, default=100)
-    parser.add_argument("-mt", "--max_tokens", help="add vllm doc",
-                        type=int, default=1000)
-    parser.add_argument("-d", "--data_set", help="dataset path",
-                        type=str, default="../enron.jsonl")
-    args = parser.parse_args()
+    os.environ['CUDA_LAUNCH_BLOCKING'] = '1' # TODO: find out if this thing is necessary. 
+    args = parse_argument()
 
     main(args)
