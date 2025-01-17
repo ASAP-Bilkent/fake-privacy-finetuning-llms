@@ -16,6 +16,8 @@ def parse_argument():
     # TODO: Add an argument to control the output
     parser.add_argument("dir", help="Directory that includes the models to be ran.",
                         default="../pythia-1.4b")
+    parser.add_argument(
+        "-d", "--dataset", help="the path of dataset", type=str, default="../enron.jsonl")
 
     return parser.parse_args()
 
@@ -33,13 +35,24 @@ def enable_output(dir):
     logging.disable(logging.NOTSET)
 
 
+def create_text(x):
+    x['text'] = x['prompt'] + x['continuation']
+
+    return x
+
+
+def get_dataset(path):
+    dataset = load_dataset("json", data_files=path, split="train")
+
+    dataset = dataset.select(range(0, 1110))
+
+    return dataset.map(create_text)
+
+
 def process_checkpoint(checkpoint_path, output_dir):
     block_output()
-    
-    dataset = load_dataset("json", data_files='../enron.jsonl', split="train")
-    dataset = dataset.select(range(0, 1110))
-    dataset = dataset.map(lambda x: x['prompt'] + x['continuation'])
 
+    dataset = get_dataset(args.datase)
     perplexity = load("perplexity", module_type="metric")
     results = perplexity.compute(predictions=dataset['text'], model_id=checkpoint_path)
 
