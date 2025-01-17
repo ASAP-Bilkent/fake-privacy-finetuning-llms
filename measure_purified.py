@@ -203,7 +203,7 @@ def run_measure_purified(args):
     # print("Loading the tokenizer based on the given model")
     # tokenizer = get_tokenizer(args.model)
 
-    print("Loading the model.")
+    print(f"Loading the model {args.model}")
     model = get_model(args.model)
 
     print("Checking results file.")
@@ -232,8 +232,7 @@ def run_measure_purified(args):
         }
 
         save_results(results, results_file_path)
-        print(f"Results for temperature {
-              temperature} saved in {results_file_path}")
+        print(f"Results for temperature {temperature} saved in {results_file_path}")
 
 
 if __name__ == "__main__":

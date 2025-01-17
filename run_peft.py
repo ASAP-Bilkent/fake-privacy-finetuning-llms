@@ -60,6 +60,7 @@ def get_output_dir(model_name, wd, lr, is_original):
     # Extract the base name of the model
     output_directory = re.search(r'[^/]+$', model_name, re.MULTILINE).group(0)
 
+    # TODO: fix this
     # Append additional directory structure based on the is_original flag
     if is_original:
         output_directory = os.path.join(output_directory, "self-generated-dora-" +
