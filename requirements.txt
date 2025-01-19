@@ -1,0 +1,8 @@
+torch==2.5.1
+transformers==4.47.1
+peft==0.14.0
+accelerate==1.2.0
+trl==0.12.2
+bitsandbytes==0.45.0
+vllm==0.6.5
+thefuzz==0.22.1
