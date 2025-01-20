@@ -1,0 +1,622 @@
+[
+  {
+    "instruction": "Find identificatory descriptions of the appellant in the following text.",
+    "examples": [
+      {
+        "input": "At the time of the alleged offense, appellant, a Negro boy, was fifteen (15) years of age. Upon his appearance in court, attended by counsel, he requested that he be treated as a youthful offender. He agreed to waive trial by jury and the trial court called for a probation officer's report to aid him in determining if he qualified for treatment under the Youthful Offender Law and passed the case. Upon the filing of the probation officer's report, a hearing was held. At this hearing the trial court interrogated appellant at great length as to his rights to a public trial by a jury, his right to confront his accusers, his right to testify in his defense if he so desired, his right to compulsory process to have his witnesses in court, and the range of punishment for the offense of perjury.",
+        "output": "The identificatory descriptions of the appellant in the provided text are: \n1. Age: Appellant was fifteen (15) years old at the time of the alleged offense. \n2. Race: Appellant is identified as a \"Negro boy.\" \n3. Legal Proceedings: Appellant appeared in court with counsel and requested to be treated as a youthful offender. He waived trial by jury. \n4. Court Interrogation: The trial court conducted a thorough interrogation of appellant regarding his rights, including: \n\tRight to a public trial by jury \n\tRight to confront his accusers \n\tRight to testify in his defense \n\tRight to compel witnesses to appear in court \n\tRange of punishment for the offense of perjury"
+      },
+      {
+        "input": "On April 25, 2009, appellant was a member of the Ojai Surenos Lokos (OSL), a Latino criminal street gang with allegiance to the Mexican Mafia. The victim, 16-year-old Seth Scarminach, was a member or associate of OSL's primary rival, the Meiners Oaks Boys (MOB) gang. OSL members adopted the color blue as a symbol and commonly wore blue bandanas and jerseys, while MOB members wore red bandanas and shoelaces. MOB members were primarily Caucasian and wore red in part to connote \"White power.\"\n1 Unless otherwise noted, all statutory references are to the Penal Code. Appellant was 14 years old when he committed the crime and was charged as an adult based on allegations he personally killed the victim and acted for the benefit of a criminal street gang (Welf. & Inst. Code, § 707, subds. (d)(2)(A) & (d)(2)(C)(ii)). Five months after the complaint was filed, a doubt was declared as to his mental competency and the criminal proceedings were suspended. In July 2012, the jury found appellant competent to stand trial and the proceedings were reinstated.",
+        "output": "The identificatory descriptions of the appellant in the provided text are as follows: \n1. Age at the Time of the Crime: Appellant was 14 years old when he committed the crime. \n2. Membership in a Gang: Appellant was associated with the Ojai Surenos Lokos (OSL), described as a Latino criminal street gang with allegiance to the Mexican Mafia. OSL members typically wore blue bandanas and jerseys. \n3. Legal Status: Appellant was charged as an adult despite being a minor at the time of the offense. This decision was based on allegations that he personally killed the victim and acted for the benefit of a criminal street gang. \n4. Legal Proceedings: Criminal proceedings against the appellant were initially suspended due to doubts about his mental competency. However, he was later found competent to stand trial in July 2012, leading to the reinstatement of the proceedings. These details provide a comprehensive identificatory profile of the appellant in the context of the criminal case described."
+      }
+    ]
+  },
+  {
+    "instruction": "Find the crime mentioned in the following text.",
+    "examples": [
+      {
+        "input": "The defendant presents the following charges of error: (1) that the evidence was insufficient to establish his guilt beyond a reasonable doubt; (2) that the court improperly excluded certain testimony concerning the decedent's reputation for violence; (3) that the court improperly gave certain of the State's instructions and improperly refused to give the defendant's instruction on involuntary manslaughter. The defendant asks this court, on the basis of these errors, to reverse the conviction and discharge the defendant or to find the defendant guilty of manslaughter and order him to be discharged because he has already served a sufficient penalty for that crime, or to grant a new trial to determine the question of the defendant's guilt or innocence of manslaughter.",
+        "output": "The crime mentioned in the provided text is manslaughter. The defendant is challenging the conviction and presenting arguments related to the sufficiency of evidence, exclusion of testimony, and jury instructions, specifically seeking to reverse the conviction or alternatively to be found guilty of manslaughter instead of the original charge."
+      },
+      {
+        "input": "In 2012, seventy-three-year-old Charles Harper lived in a house in Michigan\nCity with his friend, Vincent Fayson. On January 19, 2012, Shelly arrived at\nHarper’s house and asked Fayson if Harper was available. Harper asked Shelly\nto come inside and gave Fayson some money so that he could leave the house\nand go out with his friends. Fayson left the house sometime around eight\no’clock at night.\nAround 10:30 p.m., Fayson, still out with his friends, called Harper and\nreceived no answer. When Fayson returned to Harper’s house later that night,\nHarper’s truck was gone, but the lights and television \nto the house was unlocked. Fayson entered the house and noticed that a chair\nwas propped underneath the doorknob to the kitchen door. Fayson removed\nthe chair, opened the door, and found Harper lying in a pool of blood.\nHarper had been shot five times, including once in the back of the head and\nonce in the face. Fayson contacted the police and informed them that Shelly\nwas the last person he had seen with Harper. Later that evening, officers\ndiscovered Harper’s truck parked at an apartment complex. The next morning,\nofficers knocked on the door of an apartment at the complex belonging to Doris\nParr, who invited them inside. The officers soon d\nthe furnace room and arrested him.",
+        "output": "The crime mentioned in the provided text is murder of Charles Harper. Charles Harper was found shot to death in his house after his friend, Vincent Fayson, discovered him upon returning home. The details of the crime include Harper being shot multiple times, his truck being stolen and later found, and subsequent police investigation leading to the arrest of Doris Parr."
+      },
+      {
+        "input": "On the tragic morning of January 1, 2002, Elvira Charley shot three of her six children to death with a .22 caliber semi-automatic rifle, as they slept in the Charley family home located on the Navajo Indian Reservation in Klagetoh, Arizona. When the children were dead, Charley covered their bodies with blankets and went to the home of her aunt, Minnie Begay. After visiting with the Begays for more than an hour, Charley left, telling those present that she was going home to \"check on her kids.\"",
+        "output": "The crime mentioned in the text is the murder of three of Elvira Charley's six children by her with a .22 caliber semi-automatic rifle."
+      },
+      {
+        "input": "Dennis Werlinger pleaded guilty to one count of bank embezzlement in violation of 18 U.S.C. Sec. 656 (1982).  The district court sentenced Werlinger to twenty-seven months imprisonment.  Under the Sentencing Guidelines, Werlinger received an offense level of ten because the amount he embezzled was between $500,001 and $1 million.\n\nWerlinger had been employed as a bank teller at the Norwest Bank in Fargo, North Dakota, for approximately ten years.  Over the course of his employment, Werlinger embezzled over $600,000.",
+        "output": "The crime mentioned in the provided text is bank embezzlement, for which Dennis Werlinger pleaded guilty under 18 U.S.C. Sec. 656. He embezzled over $600,000 while working as a bank teller at Norwest Bank in Fargo, North Dakota, over a period of approximately ten years."
+      }
+    ]
+  },
+  {
+    "instruction": "Identify the individual responsible for committing the crime described in the provided text.",
+    "examples": [
+      {
+        "input":"On the tragic morning of January 1, 2002, Elvira Charley shot three of her six children to death with a .22 caliber semi-automatic rifle, as they slept in the Charley family home located on the Navajo Indian Reservation in Klagetoh, Arizona. When the children were dead, Charley covered their bodies with blankets and went to the home of her aunt, Minnie Begay. After visiting with the Begays for more than an hour, Charley left, telling those present that she was going home to \"check on her kids.\"",
+        "output": "The individual responsible for committing the crime described in the provided text is Elvira Charley. She shot three of her six children to death with a .22 caliber semi-automatic rifle while they were sleeping in their family home on the Navajo Indian Reservation in Klagetoh, Arizona, on January 1, 2002."
+      },
+      {
+        "input": "Patzer is a thirty-year old man with a long history of family troubles, mental health issues, and drug abuse. At the age of fifteen, he was expelled from his family and placed with a foster family. He has a history of non-violent crimes that relate to drugs or to obtaining money to buy drugs. Patzer has attempted drug treatment several times, and has endured a series of medications and treatment in an effort to ameliorate his mental health problems, none of which has been entirely successful. Patzer has been variously diagnosed with a slew of psychiatric afflictions, from depression to bipolar disorder. However, it was only recently in anticipation of this sentencing that Patzer was diagnosed with Attention Deficit/Hyperactivity Disorder (\"ADHD\").\nIn the six years immediately preceding the crimes for which he is being sentenced herein, Patzer had achieved some success in being a productive member of society. He had been in methadone treatment and had steady work as a welder and machinist. However, Patzer began using heroin again around February 2007. On February 24, 2007, he robbed a TCF Bank in Schaumburg, Illinois and, on February 28, 2007, he robbed a Mutual Bank in Roselle, Illinois. During both robberies, Patzer showed the teller a handgun and demanded cash. He got away with about $5,000 total, which he says he used to buy drugs. He fled Illinois and turned up a few weeks later at a Sheraton Hotel in Seattle, Washington, where he ate breakfast and left without paying. When he was confronted by a hotel security guard, Patzer told him that he was wanted for bank robbery in Illinois. The Seattle, Washington Police Department took him into custody, where he confessed to the two bank robberies. On August 15, 2007, the court accepted Patzer's plea of guilty to Counts One (bank robbery), Three (bank robbery), and Four (firearm) of the Indictment.",
+        "output": "\nThe individual responsible for committing the crimes described in the provided text is Patzer. He pleaded guilty to robbing two banks, TCF Bank in Schaumburg, Illinois, and Mutual Bank in Roselle, Illinois, on February 24 and February 28, 2007, respectively. During both robberies, Patzer displayed a handgun to the tellers and demanded money, totaling approximately $5,000, which he admitted using to purchase drugs. He subsequently fled to Seattle, Washington, where he was apprehended after admitting his involvement in the bank robberies to hotel security. Patzer's guilty plea included charges of bank robbery and firearm possession."
+      },
+      {
+        "input": "Dennis Werlinger pleaded guilty to one count of bank embezzlement in violation of 18 U.S.C. Sec. 656 (1982).  The district court sentenced Werlinger to twenty-seven months imprisonment.  Under the Sentencing Guidelines, Werlinger received an offense level of ten because the amount he embezzled was between $500,001 and $1 million.\n\nWerlinger had been employed as a bank teller at the Norwest Bank in Fargo, North Dakota, for approximately ten years.  Over the course of his employment, Werlinger embezzled over $600,000.",
+        "output": "\nThe individual responsible for committing the crime of bank embezzlement, as described in the provided text, is Dennis Werlinger. He pleaded guilty to embezzling over $600,000 while employed as a bank teller at Norwest Bank in Fargo, North Dakota."
+      },
+      {
+        "input": "On October 29, 2011, Nicholas Soto, his pregnant wife, Rebecca Vega, Rebecca’s father, Frank Vega, and her mother, Nicole Martinez, attended a Halloween party at a house on North Carol Street in Anahiem.1 This is an area in Anaheim not known to be in any criminal street gang’s claimed territory. The party was large and loud, and Soto’s family spent most of their time standing together near a small backyard patio that people were using as a dance floor. Frank, who was wearing a full-body gorilla costume with headdress, said the party had music, a disc jockey, and beer.\nAbout an hour after Soto and his family arrived, a group of young men walked into the backyard. Someone at the party told Soto they thought the young men were uninvited Underhill gang members.\nSometime later, Rebecca and Soto saw two young men groping Martinez while she tried to dance. Soto intervened and the two young men engaged him in a cursing match. One of the young men yelled to Soto, “You don’t know who you’re messing with.” The verbal exchange turned physical, and a group of partygoers gathered around the combatants. When the dust settled, Soto discovered he had been stabbed in the elbow and right rib cage.\nSoto pointed to a male Hispanic about 18 years old, five feet, eight inches tall with medium build, wearing a blue and white checked shirt and a dark hat, and he told Rebecca that person had stabbed him. Rebecca saw this man run and join a “group of . . . guys” standing together in a different part of the backyard.\nFrank, still in his gorilla costume minus the headdress, did not see the scuffle on the dance floor, but “a bunch of screaming” drew his attention there. Frank started to separate the combatants as he searched for Rebecca. When he found her, Rebecca said, “Nick was stabbed.” Frank lifted Soto’s shirt and exclaimed, “What the hell?” He turned around and saw a bunch of guys. Rebecca pointed at someone in a checked shirt and black hat and said, “Dad, it’s him.”",
+        "output": "\nBased on the provided text, the individual responsible for committing the crime (stabbing Nicholas Soto) is described as a male Hispanic, approximately 18 years old, about five feet eight inches tall with a medium build, wearing a blue and white checked shirt and a dark hat. He was identified by Soto as the person who stabbed him during the altercation at the Halloween party."
+      }
+    ]
+  },
+  {
+    "instruction": "Identify the victim based on the following text.",
+    "examples": [
+      {
+        "input":"On November 12, 2002, Jones fraudulently assumed the identity, including the date of birth and social security number, of Orville Wayne Hudson, to secure a $21,995 loan from Bank of America to purchase a recreational vehicle. On June 2, 2003, Jones traded in the vehicle at a dealership, using the proceeds to purchase another motor vehicle. To finance the purchase of the second motor vehicle, Jones again assumed the identity of Orville Wayne Hudson to secure a second loan from Bank of America",
+        "output": "\nBased on the provided text, the victim is Orville Wayne Hudson, whose identity Jones fraudulently assumed to secure loans from Bank of America."
+      },
+      {
+        "input": "On June 11, 1959, Harold Eidinoff was indicted by a grand jury in El Paso County, Texas, for the offense of murder with malice in the shooting death of one Theodore Andress.",
+        "output": "\nThe victim was Theodore Andress."
+      },
+      {
+        "input": "On October 29, 2011, Nicholas Soto, his pregnant wife, Rebecca Vega, Rebecca’s father, Frank Vega, and her mother, Nicole Martinez, attended a Halloween party at a house on North Carol Street in Anahiem.1 This is an area in Anaheim not known to be in any criminal street gang’s claimed territory. The party was large and loud, and Soto’s family spent most of their time standing together near a small backyard patio that people were using as a dance floor. Frank, who was wearing a full-body gorilla costume with headdress, said the party had music, a disc jockey, and beer.\nAbout an hour after Soto and his family arrived, a group of young men walked into the backyard. Someone at the party told Soto they thought the young men were uninvited Underhill gang members.\nSometime later, Rebecca and Soto saw two young men groping Martinez while she tried to dance. Soto intervened and the two young men engaged him in a cursing match. One of the young men yelled to Soto, “You don’t know who you’re messing with.” The verbal exchange turned physical, and a group of partygoers gathered around the combatants. When the dust settled, Soto discovered he had been stabbed in the elbow and right rib cage.\nSoto pointed to a male Hispanic about 18 years old, five feet, eight inches tall with medium build, wearing a blue and white checked shirt and a dark hat, and he told Rebecca that person had stabbed him. Rebecca saw this man run and join a “group of . . . guys” standing together in a different part of the backyard.\nFrank, still in his gorilla costume minus the headdress, did not see the scuffle on the dance floor, but “a bunch of screaming” drew his attention there. Frank started to separate the combatants as he searched for Rebecca. When he found her, Rebecca said, “Nick was stabbed.” Frank lifted Soto’s shirt and exclaimed, “What the hell?” He turned around and saw a bunch of guys. Rebecca pointed at someone in a checked shirt and black hat and said, “Dad, it’s him.”",
+        "output": "\nThe victim was Nicholas Soto."
+      },
+      {
+        "input": "On March 1, 2007, the police and fire department responded to a house fire at 619 Silver Street in Greenville, Mississippi. Once the fire was extinguished, the responders discovered a body, later identified as that of Louis Harris, located in the kitchen. Expert testimony established that the fire was the result of six separate fires intentionally set in various locations of the house.\nHarris’s body was located under a pile of debris, and various surfaces of the body were charred. Dr. Steven Hayne, a pathologist, testified that the burns had occurred after death. The body also had puncture wounds at multiple sites, including the face and neck. Dr. Hayne stated that Harris’s death was caused by a puncture wound to the neck, which led to massive external blood loss.",
+        "output": "\nThe victim was Louis Harris."
+      },
+      {
+        "input": "On April 25, 2009, appellant was a member of the Ojai Surenos Lokos (OSL), a Latino criminal street gang with allegiance to the Mexican Mafia. The victim, 16-year-old Seth Scarminach, was a member or associate of OSL's primary rival, the Meiners Oaks Boys (MOB) gang. OSL members adopted the color blue as a symbol and commonly wore blue bandanas and jerseys, while MOB members wore red bandanas and shoelaces. MOB members were primarily Caucasian and wore red in part to connote \"White power.\"",
+        "output": "\nThe victim is 16-year-old Seth Scarminach."
+      }
+    ]
+  },
+  {
+    "instruction": "Towards which groups is the petitioner biased?",
+    "examples": [
+      {
+        "input": "The letter reflected virulent anti-Hispanic and anti-Catholic bias and accused the petitioner's superiors and fellow employees of incompetence.  Approximately half of the border agents with whom the petitioner worked were Hispanic.  Many of the agency's employees were Catholic.  In that situation, the continued presence of an employee who had expressed a hostile attitude toward a large number of his coworkers and toward his supervisors would be likely to have a disruptive effect upon the operation of the agency, as the agency itself feared.\nMoreover, since 98 percent of the aliens apprehended in the area where the petitioner worked were Hispanic, the petitioner's strong bias against that nationality raised a serious question concerning the petitioner's ability to perform his duties as a border patrol agent in a fair and unbiased manner.  A law enforcement officer who has this attitude toward the persons he is charged with apprehending is likely to show little respect for their rights.",
+        "output": "\nThe petitioner is biased towards Hispanics and Catholics."
+      }
+    ]
+  },
+  {
+    "instruction": "Who pursued the appellant?",
+    "examples": [
+      {
+        "input": "The officers then asked appellant if they could check his shoe. While appellant was taking off one of his shoes, Officer Barton noticed that appellant's hand was on the side of his foot and it appeared that he was trying to break up something. Barton reached down and grabbed appellant's hand, and at that point appellant shoved Barton to the ground and ran to the rear of the lounge. At that time, Barton's K-9 dog jumped out of the patrol car and pursued appellant. The dog caught appellant and the officers brought appellant under control and handcuffed him.",
+        "output": "\nBarton's K-9 dog pursued the appellant."
+      }
+    ]
+  },
+  {
+    "instruction": "Identify the person between the driver and the appellant.",
+    "examples": [
+      {
+        "input": "The evidence in this case established that on September 13, 1987, at approximately 5:00 p.m., Deputy Sheriffs Allen Barton and Kenneth Forrester of the Escambia County Sheriff's Department observed a vehicle bearing Texas license plates parked in front of a lounge in a predominantly black area of Pensacola that is known for drug-related crimes. A white male was sitting in the driver seat; appellant, a black male, was sitting in the front passenger seat; a white female was sitting between the driver and appellant; and a second black male was sitting in the back seat. Although the officers observed no illegal activity, they parked their patrol car behind the subject car. Officer Barton then approached the driver and Officer Forrester approached the passenger's side of the vehicle.",
+        "output": "\nThe person sitting between the driver and the appellant was a white female."
+      }
+    ]
+  },
+  {
+    "instruction": "Identify the date and the status Abdallahi entered the United States by in the following text.",
+    "examples": [
+      {
+        "input": "Abdallahi entered the United States lawfully in 2000 as a non-immigrant visitor.\nHe remained longer than permitted and applied for asylum, withholding of removal, and\nprotection under the Convention Against Torture (“CAT”), but those claims were later\nwithdrawn in favor of his request for adjustment of status.\n",
+        "output":"\nAbdallahi entered the United States lawfully in 2000 as a non-immigrant visitor."
+      }
+    ]
+  },
+  {
+    "instruction": "Identify the person who filed action agains L'Oreal.",
+    "examples":[
+      {
+        "input": "This case comes before this Court on L'Oreal USA Products, Inc.'s motion for summary judgment (Docket # 8). Paul Pighee filed this action against L'Oreal, his former employer, claiming that L'Oreal terminated his employment on the basis of his race and in retaliation for Pighee's *888 participation in protected activity. Pighee brings race and retaliation claims under Title VII, 42 U.S.C. § 2000e, First and Fourteenth Amendment claims under the United States Constitution, and claims for outrage, tortious interference, and slander under state common law. In support of its motion for summary judgment, L'Oreal attaches an affidavit from Dave Coombs, L'Oreal's Human Resources Director, contents of Pighee's personnel file, contents of the personnel file of Mike Renner, a former L'Oreal employee, L'Oreal's sexual harassment policy, excerpts from the Equal Employment Opportunity Commission Investigative File, and portions of two depositions of Pighee. In support of his response to this motion, Pighee attaches an affidavit from Renner.[1] For the reasons contained herein, L'Oreal's motion will be granted in its entirety.",
+        "output": "\nThe person who filed the action against L'Oreal is Paul Pighee."
+      }
+    ]
+  },
+  {
+    "instruction": "What did the defendant wear?",
+    "examples": [
+      {
+        "input": "At approximately 9:00 p.m. on February 3, 1990, Officers George Chenevert and Edmond Worthy were on patrol in the vicinity of South Claiborne Avenue and Toledano Street when they heard a woman scream.[2] Immediately thereafter, they observed a *1081 man running with what appeared to be a purse. The officers pursued the man into the Magnolia Housing Project, but they lost sight of him. The officers split up to continue the search, and some four minutes later, Chenevert saw the defendant standing on a balcony. Officer Chenevert testified that the defendant, dressed in a dark long sleeve shirt and blue jeans, fit the description of the person he was pursuing. He approached the defendant to investigate. When Chenevert frisked the defendant, he found a gun in his waistband. He placed the defendant under arrest for carrying a concealed weapon and advised him of his rights. A search incident to the arrest found a plastic bag containing twenty pieces of crack cocaine in defendant's right front pants pocket. When the defendant was informed that he was being arrested for purse snatching, he stated, \"I don't do robberies. I sell crack.\"",
+        "output": "\nThe defendant was wearing a dark long sleeve shirt and blue jeans."
+      }
+    ]
+  },
+  {
+    "instruction": "Identify the people with whom Geronimo De Haro was playing pool in the following text.",
+    "examples": [
+      {
+        "input": "On August 8, 1981, between 8 and 8:30 p.m., Rosa R., who was employed as a general household helper by the De Haro family, asked to use the telephone in Geronimo De Haro's ground floor room. At the time, Geronimo De Haro was playing pool in the adjacent pool room with defendant and Filiberto Nunez (Nunez). After using the telephone, Rosa retired to her nearby room for the night.\nLater, Rosa was awakened by a man's voice outside her door; she recognized the man as Nunez. He asked to come in, offered her money, and said he would pay for a hotel. When Rosa refused, Nunez began to apologize. Shortly, defendant fetched Nunez and Rosa thereafter heard two automobiles drive away. She fell asleep once again.\nSome time later, Rosa was awakened by someone pulling off her bed covers. Unable to see in the darkness, she asked who it was, but received no response. The man placed his hand over Rosa's mouth, after which she became frightened. Trying to rise, she struck her head, whereupon the naked man fell on top of her. After several minutes of struggle, during which the man struck her, he removed her underwear and forcibly engaged in sexual intercourse. When the man finished he rose and turned on the light, at which point she recognized him as defendant.\nAfter defendant left her room, Rosa dressed, then spent the remainder of the night awake, frightened and tearful. Her underwear had been torn, her leg was bruised and she had a lump on her head. She was afraid to report the incident to her employers or to the police, due to her status as an illegal alien. However, approximately 10 days later, after confronting defendant once again in the pool room, she told Geronimo De Haro. Approximately two weeks later, Rosa summoned the courage to tell Mrs. De Haro and to speak to the police.",
+        "output": "\nThe people with whom Geronimo De Haro was playing pool in the text are defendant and Filiberto Nunez."
+      }
+    ]
+  },
+  {
+    "instruction": "Identify the date \"Pena\" became arrested in the following text.",
+    "examples": [
+      {
+        "input": "In 2011, Ventura County law enforcement agencies formed an auto theft\ntask force to investigate a theft operation involving Toyota Tacoma trucks stolen from\nLos Angeles County and sold to unsuspecting buyers in Ventura County. The stolen\ntrucks had fraudulent titles and displayed license plates stolen from other Tacoma trucks.\nThe trucks were parked on residential streets, marked for sale with a telephone number,\nand sold thereafter in cash transactions.\nOn June 20, 2011, Mario Delgado parked his Toyota Tacoma truck in front\nof his apartment in Los Angeles. Later that evening, he noticed that his truck was not\nthere and reported the theft to police.\nTwo days later, Abel Gutierrez saw a Toyota Tacoma truck parked on a\nresidential street in Ventura, marked with a \"For Sale\" sign. Gutierrez telephoned the\ncontact number and spoke to Baron Ramirez, who identified himself as \"Fernando.\"\nGutierrez informed Ramirez that he was interested in purchasing the truck.\nDetective George Orozco, a California Highway Patrolman and member of\nthe auto theft task force, also saw the Toyota Tacoma truck marked for sale. The vehicle\nidentification number on the truck matched the vehicle identification number on the truck\nstolen from Delgado, but the license plate number differed. Orozco telephoned Ramirez,\nwho again identified himself as \"Fernando,\" and the two agreed to meet the following\nday.\nIn the afternoon of June 24, 2011, Orozco, working as an undercover\nofficer, arrived at the location of the truck to meet Ramirez. Other law enforcement\nmembers of the task force were nearby conducting surveillance. Ramirez left a black\nCrown Victoria automobile driven by Pena and walked toward the Tacoma truck. Pena\nthen drove away.\nGutierrez and his wife appeared and parked near the truck. Orozco\nintroduced himself to Ramirez and stated that he intended to purchase the truck. Ramirezstated that he would sell the truck to either Orozco or Gutierrez, but would permit\nGutierrez to \"test drive\" the truck first.\nDuring the test drive, Ramirez appeared nervous and dropped the sales\nprice by $1,000. Gutierrez inquired if title to the truck was \"clean,\" and Ramirez\nconfirmed that it was. Gutierrez then offered to purchase the truck for $6,500. When\nRamirez and Gutierrez returned from the test drive, they were arrested by members of the\nauto theft task force. Police officers later released Gutierrez. Ramirez stated to police\nofficers that he was unaware that the truck was stolen and that Pena was paying him to\nsell the truck.\nWithin an hour, police officers conducted a traffic stop on the Crown\nVictoria automobile and arrested Pena. Officers found fraudulent registration and title\ndocuments concealed in the panels of the automobile and keys to other Toyota Tacoma\ntrucks on the floorboard. During a police interview, Pena denied knowledge of the stolen\nTacoma truck and stated that he drove Ramirez to Ventura as a favor. Pena also stated\nthat his name was \"Ladimiro Aranda\" and that he did not own the Crown Victoria\nautomobile. During booking at the police station, officers discovered Pena's true identity\nafter analyzing his fingerprints.",
+        "output": "\nJune 24, 2011"
+      }
+    ]
+  },
+  {
+    "instruction": "Who was the F.B.I. expert in the following legal investigation?",
+    "examples": [
+      {
+        "input": "On January 20, 1998, Stephanie Crowe, aged twelve, was stabbed nine times by knife in her own bed in her own bedroom. She had been on the phone about 10 p.m. and died before midnight. Her body was discovered by her grandmother about 6 a.m., the next day. \nWithin two weeks of her death, the Escondido police had identified three teenage boys as suspects, had interrogated them, and had obtained confessions. On May 22, 1998, these suspects were indicted for Stephanie’s murder. The district attorney of San Diego County prepared the case for trial, calling on an F.B.I. expert, Mary Ellen O’Toole, for help in developing the case. But in February 1999, the state Attorney General dismissed the indictments without prejudice. This court recently reversed the dismissal of a § 1983 lawsuit brought by the former suspects against the investigating police officers, so that case is going forward.",
+        "output": "\nThe F.B.I. expert in the legal investigation was Mary Ellen O'Toole."
+      }
+    ]
+  },
+  {
+    "instruction": "How old was the victim when the case happened?",
+    "examples": [
+      {
+        "input": "On January 20, 1998, Stephanie Crowe, aged twelve, was stabbed nine times by knife in her own bed in her own bedroom. She had been on the phone about 10 p.m. and died before midnight. Her body was discovered by her grandmother about 6 a.m., the next day. \nWithin two weeks of her death, the Escondido police had identified three teenage boys as suspects, had interrogated them, and had obtained confessions. On May 22, 1998, these suspects were indicted for Stephanie’s murder. The district attorney of San Diego County prepared the case for trial, calling on an F.B.I. expert, Mary Ellen O’Toole, for help in developing the case. But in February 1999, the state Attorney General dismissed the indictments without prejudice. This court recently reversed the dismissal of a § 1983 lawsuit brought by the former suspects against the investigating police officers, so that case is going forward.",
+        "output": "\nThe victim was 12 years old when the case happened."
+      }
+    ]
+  },
+  {
+    "instruction": "Identify the main reason for Attorney Gordon C. Ring's suspension from practicing law in Wisconsin.",
+    "examples": [
+      {
+        "input": "On June 25, 2019, the Office of Lawyer Regulation (OLR) filed a two-count complaint against Attorney Gordon C. Ring. Count one alleged that by virtue of Attorney Ring's recent two-year license suspension by the Illinois Supreme Court, Attorney Ring should be subject to reciprocal discipline in Wisconsin pursuant to SCR 22.22. Count two alleged by failing to notify the OLR of his disbarment in Illinois within 20 days of the effective date of the imposition of such discipline, Attorney Ring violated Supreme Court Rule (SCR) 22.22(1). After service of the complaint, the parties stipulated to the imposition of reciprocal discipline. We approve the stipulation, and we therefore order a two-year suspension of Attorney Ring's Wisconsin law license.",
+        "output": "Attorney Gordon C. Ring's suspension from practicing law in Wisconsin was primarily due to a two-year license suspension imposed by the Illinois Supreme Court, which led to the Wisconsin Supreme Court imposing reciprocal discipline."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's reasoning for affirming the validity of the search warrant in the case of People v. Shapiro.",
+    "examples":[
+      {
+        "input": "The warrant was not invalid because it was based upon an affidavit which established a future, rather than a present, probable cause to search. This exact and identical issue was raised and resolved against a defendant in Alvidres v. Superior Court, 12 Cal. App.3d 575, 580-581 [90 Cal. Rptr. 682]... The court held that the affidavit asserting a future mail delivery of narcotics, sufficiently established probable cause to support the issuance of a search warrant... nowhere in either the federal or state Constitutions, nor in the statutes of California, is there any language which would appear to prohibit the issuance of a warrant to search at a future time.",
+        "output": "The court affirmed the validity of the search warrant by explaining that the affidavit provided sufficient probable cause based on a future event, which is permissible under both federal and state law. The court referenced Alvidres v. Superior Court to support the position that probable cause for future events is valid, emphasizing that there are no constitutional or statutory prohibitions against issuing a search warrant based on anticipated events."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's decision on the plaintiff's motion for reconsideration.",
+    "examples":[
+      {
+        "input": "Plaintiff's motion for reconsideration is a recitation of arguments previously asserted in his complaint and fully considered by this court in its October 14, 2016 Opinion. Plaintiff does not identify an intervening change in the controlling law, bring forth new evidence that was previously unavailable, or argue that reconsideration is necessary to prevent manifest injustice. Thus, he has failed to identify any error of law or mistake of fact that would warrant reconsideration.",
+        "output": "The court denied the plaintiff's motion for reconsideration, finding it was merely a repetition of previously considered arguments and did not present new evidence or legal changes that would justify altering the previous decision."
+      }
+    ]
+  },
+  {
+    "instruction": "Explain why the court decided to vacate the dismissal of Soileau's habeas corpus petition and remand the case.",
+    "examples":[
+      {
+        "input": "Soileau was neither given notice that the magistrate was considering a Rule 9(a) dismissal nor an opportunity to demonstrate that the delay was excusable or that it was not prejudicial. Because the magistrate relied on evidence outside the pleadings, the matter necessarily fell into a summary judgment posture. A Rule 9(a) dismissal in that setting required notice to Soileau and an opportunity to be heard.",
+        "output": "The court vacated the dismissal and remanded the case because Soileau was not given notice or an opportunity to respond to the potential Rule 9(a) dismissal, which was treated as a summary judgment matter requiring such procedural safeguards."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's decision regarding the burden of proof in bankruptcy claims.",
+    "examples":[
+      {
+        "input": "This court concludes that the first approach is the better one to follow. To give the effect of a presumption to a proof of claim and thereby to require an objector to produce sufficient evidence to overcome the presumption is to give greater stature to the proof of claim than is warranted by Rule 301(b) which provides only that a proof of claim is prima facie evidence. To require an objector to produce enough evidence to rebut or overcome the so-called presumption would create a confusing additional step in administering claims against a bankrupt's estate.",
+        "output": "The court decided that a proof of claim should be considered prima facie evidence. The objector must present some evidence contradicting the claim, and the bankruptcy judge must weigh all evidence presented, without requiring the objector to fully rebut the presumption of the claim's validity."
+      }
+    ]
+  },
+  {
+    "instruction": "Determine whether the Orange County property appraiser had the authority to assess time share developments on a per time share basis.",
+    "examples": [
+      {
+        "input": "First, we agree with the trial court that at the time Hausman assessed the time share developments he lacked the authority to separately appraise each unit week. Florida's constitution provides that 'no tax shall be levied except in pursuance of law.' Art. VII, § 1(a), Fla. Const. From this it follows that property taxes are 'of a purely statutory nature which can be levied, assessed and collected only as provided by statute.' State ex. rel. Seaboard Airline Railway Co. v. Gay, 160 Fla. 445, 35 So.2d 403 (1948). An assessment not authorized by statute is void. Lewis State Bank v. Bridges, 115 Fla. 784, 156 So. 144 (1934). At the time Hausman conducted these assessments, the Florida time share statutes provided: Notwithstanding other provisions of this chapter, either expressed or implied, to the contrary, it is the legislative intent that nothing herein be deemed to alter the existing procedure for the assessment and collection of ad valorem taxes on accommodations or facilities subject to a time-sharing plan. § 721.03(3), Fla. Stat. (1981). Since VTSI's time shares were created in condominium facilities, they should have been assessed accordingly. The Florida Condominium Act provides in part that '[e]ach condominium parcel shall be separately assessed for ad valorem taxes and special assessments as a single parcel.' § 718.120(1), Fla. Stat. (1981). The existing statutes did not authorize Hausman to appraise the partial time share interests created in VTSI's condominium units. Due to this lack of authority, the trial court correctly concluded that Hausman's appraisal based on the value of the unit weeks was unlawful.",
+        "output": "Hausman did not have the authority to separately appraise each unit week. According to Florida statutes, time share estates should be assessed as single condominium parcels, and there was no statutory authorization for appraising partial time share interests separately. Thus, Hausman's assessment method was deemed unlawful."
+      }
+    ]
+  },
+  {
+    "instruction":"Determine why the district court dismissed Compass Condo Corporation's claims for economic damages arising from the allision of the M/V KAVO KALIAKRA with barges owned by the American River Transportation Company.",
+    "examples":[
+      {
+        "input": "In Robins Dry Dock the Supreme Court held that a steamship charterer could not recover economic damages when the steamship he chartered was rendered useless to him for a period of days after the defendant negligently broke the propeller. The charterer had no property interest in the ship when it was harmed, but instead merely had a contract with the ship's owners. The Court noted the general rule that \"a tort to the person or property of one man does not make the tort-feasor liable to another merely because the injured person was under a contract with that other unknown to the doer of the wrong.\" In similar cases, this circuit consistently applies the Robins Dry Dock rule to bar recovery for economic damages in negligence that are unconnected to an injury to a property interest.",
+        "output": "The district court dismissed Compass Condo Corporation's claims for economic damages because the economic damages were unconnected to an injury to a property interest, as per the Robins Dry Dock rule. Compass had no property interest in the injured employees, thus barring recovery for the economic damages claimed."
+      }
+    ]
+  },
+  {
+    "instruction": "Determine whether the initial warrantless search and subsequent use of a drug-sniffing dog was lawful.",
+    "examples":[
+      {
+        "input": "The first issue to be decided on appeal is whether the heroin should have been suppressed because it was discovered by means of an unlawful search of the package followed by the equally unlawful seizure and testing of one of the bindles. The government argues that the subsequent 'alert' by the dog, which formed the basis for the search warrant and which preceded the seizure of the remaining bindles, was an 'independent source' which purged the taint of the initial unlawful activity. Wong Sun v. United States, 371 U.S. 471, 83 S.Ct. 407, 9 L.Ed.2d 441 (1963). Thus the government's position is that the taint of an unlawful discovery of evidence is purged by a 'rediscovery' by means acceptable for obtaining a warrant.",
+        "output": "The initial warrantless search was unlawful, and the use of the drug-sniffing dog did not purge this taint. The evidence of heroin should have been suppressed."
+      }
+    ]
+  },
+  {
+    "instruction": "Explain why Thomas Bernard's 28 U.S.C. § 2255 motion challenging the restitution order was dismissed by the district court.",
+    "examples":[
+      {
+        "input": "In December 2001, Bernard filed a 28 U.S.C. § 2255 motion challenging his restitution order on the basis the district court failed to consider evidence of Bernard's ability to pay restitution, as required by 18 U.S.C. §§ 3663(a)(1) and 3664(a). The district court granted Bernard an evidentiary hearing, and the government filed a motion to dismiss for lack of jurisdiction. Although the district court did not adopt the government's argument that the court lacked subject matter jurisdiction, the district court dismissed Bernard's habeas motion, ruling that 28 U.S.C. § 2255 'cannot be utilized by a federal prisoner who challenges only the restitution portion of his sentence.' The district court concluded that, upon Bernard's release from prison, 18 U.S.C. § 3664(k) would provide an appropriate remedy.",
+        "output": "The district court dismissed Bernard's 28 U.S.C. § 2255 motion because the statute cannot be used by a federal prisoner to challenge only the restitution portion of a sentence. The court noted that 18 U.S.C. § 3664(k) would provide an appropriate remedy after his release from prison."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's decision on the breach of contract claim in the case of DCMR v. Trident Precision Manufacturing.",
+    "examples":[
+      {
+        "input": "In the Count One of its Amended Complaint (Doc. No. 27), plaintiff alleges that '[i]n breach of the Sales Representative Agreement the Defendant wrongfully and in bad faith terminated the Agreement to the damage of Plaintiff....' (Amended Complaint, Doc. No. 27, p. 3). Defendant, in its motion for summary judgment, argues that dismissal is appropriate because, by contract, the parties had the right to terminate the agreement upon thirty days notice, for any reason or no reason, and thus its choice to exercise that right can not amount to a breach of the Contract. Under New York law, 'an employer has the right to terminate an at will employee at any time for any reason or for no reason, except where that right has been limited by express agreement.' Sabetay v. Sterling Drug, Inc., 69 N.Y.2d 329, 334, 514 N.Y.S.2d 209, 506 N.E.2d 919 (1987). Thus, defendant could terminate plaintiff at any time, for any reason or no reason at all, provided the Contract did not limit its broad right to do so.",
+        "output": "The court dismissed the breach of contract claim because the contract allowed either party to terminate the agreement with thirty days' notice for any reason. Under New York law, such a termination does not constitute a breach if it is within the contract's terms."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's ruling on Compass Condo Corporation's claim for economic damages.",
+    "examples":[
+      {
+        "input": "Compass Condo Corporation appeals the dismissal of its claims for economic damages arising from the allision of the M/V KAVO KALIAKRA with barges owned by the American River Transportation Company. [...] Compass's claims are barred under our general rule. These economic damages are traceable only to the personal injuries of Compass's employees, but Compass has no property interest in its employees in any relevant sense.",
+        "output": "The court upheld the dismissal of Compass Condo Corporation's claim for economic damages, ruling that such damages were barred under the rule established in Robins Dry Dock, as they were linked only to the personal injuries of employees and not to any direct property interest."
+      }
+    ]
+  },
+  {
+    "instruction": "Explain the appellate court's ruling on Duane H. Wall's tax refund claim in terms of jurisdiction and compliance with procedures.",
+    "examples":[
+      {
+        "input": "Duane H. Wall appeals from the district court's entry of summary judgment in favor of the government, arguing that the district court erred by concluding that it lacked subject matter jurisdiction over his tax refund claim. [...] Under the peculiar facts of this case, we conclude that the instant refund action falls within the exception set out at 26 U.S.C. § 6228(b), because Wall substantially complied with the procedures governing requests for administrative adjustment of partnership items under 26 U.S.C. § 6227(b). [...] REVERSED and REMANDED.",
+        "output": "The appellate court reversed the district court's decision, ruling that it did have jurisdiction over Wall's tax refund claim. Wall's claim was valid under 26 U.S.C. § 6228(b) as he had substantially complied with the relevant procedural requirements."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's decision on the interpretation of the option to purchase in the lease agreement.",
+    "examples":[
+      {
+        "input": "The trial court granted defendant's motion for judgment on the pleadings in an action for specific performance of an option to purchase, on the ground that the complaint did not state a cause of action. [...] Plaintiffs contend that subdivision (b) is ambiguous and therefore the court should not have granted judgment on the pleadings but should have permitted the introduction of evidence to explain the alleged ambiguity. The court held that subdivision (b) is not ambiguous, and shows on its face that it grants an option to plaintiffs to purchase only in the event that defendant desires to sell. [...] Subdivision (a) gives an absolute option to purchase for the first two years of the term, while subdivision (b) gives a qualified right or 'first opportunity' to purchase for the balance of the term, the latter right being subject to the lessor's determination of whether or not she desires to sell. [...] The judgment appealed from is affirmed.",
+        "output": "The court affirmed the trial court's decision, ruling that the lease's option clauses were clear. Subdivision (a) provided an absolute option to purchase for the first two years, while subdivision (b) offered only a \"first opportunity\" to buy if the lessor chose to sell during the remaining term. The court found no ambiguity in subdivision (b) and upheld the judgment based on the lease's explicit terms."
+      }
+    ]
+  },
+  {
+    "instruction": "Explain why the prosecutor's closing argument was deemed improper and how it impacted the trial outcome.",
+    "examples": [
+      {
+        "input": "The crucial question at trial in this case was whether the victim had consented to sexual intercourse, a matter which, as might well be expected, was hotly contested. The victim, in the course of her testimony before the jury, was 'crying, sobbing, simply hysterical.' In his final argument the prosecutor unfairly exploited the victim's expression of emotion, first by telling the jury that it was a 'tragedy' that the victim 'had to take the witness stand, sobbing and hysterical, and [had] to explain her whole humiliation in public,' and then, after a bench conference prompted by an objection, by reiterating his belief that this (the victim's having to testify) was a 'tragedy' and commenting that they, the jury, '[had] an opportunity to rectify that [tragedy].'",
+        "output": "The prosecutor's closing argument was deemed improper because he exploited the victim's emotional state to appeal to the jury's sympathy, labeling her testimony as a \"tragedy\" and suggesting the jury had an opportunity to \"rectify\" it. This improper argument was inflammatory and prejudicial, potentially affecting the jury's impartiality and decision-making, leading to the reversal of the conviction."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the Court of Appeals' decision regarding the appeal for removal of the case to federal court.",
+    "examples": [
+      {
+        "input": "In light of the decisions of this Court it is not correct that the grounds for removal under Section 1443(1) are limited to those which 'arise out of the denial of such right by the constitution or law of the state wherein the action is pending.' As we have done in several cases recently in which the trial court acted without the guidance of this Court's decision in Rachel, Peacock and Cox, the judgment of the trial court ordering the remand is reversed and the case is remanded for further consideration by the trial court in light of the foregoing decisions and opinions of this Court.",
+        "output": "The Court of Appeals reversed the trial court's order to remand the case to state court. It held that the grounds for removal under Section 1443(1) are broader than previously interpreted and required the trial court to reconsider the removal request in light of recent decisions."
+      }
+    ]
+  },
+  {
+    "instruction": "Explain the outcome of the appeal regarding the summary disposition granted to the Township of Big Creek.",
+    "examples":[
+      {
+        "input": "Ultimately, defendant fails to provide a valid argument addressing and challenging the sole basis of the trial court’s decision to grant summary disposition in favor of the township. Defendant failed to present any documentary evidence in response to the township’s motion brought under MCR 2.116(C)(10), as required by MCR 2.116(G)(4), so the trial court properly granted the township’s motion.",
+        "output": "The Court of Appeals affirmed the trial court's decision granting summary disposition in favor of the Township of Big Creek because the defendant failed to present documentary evidence to counter the township's motion, as required."
+      }
+    ]
+  },
+  {
+    "instruction": "Identify and summarize the events described in the document related to the defendant's confession.",
+    "examples":[
+      {
+        "input": "On 14 July 1999, while incarcerated in the Hampton Roads Regional Jail in Portsmouth, Virginia, defendant motioned for the jail officer in charge of his cell-block to let him out of his cell. The POD Manager, Officer Mark A.C. Glover ('Glover'), electronically opened the door to defendant's cell and allowed defendant to walk downstairs to the control pod where Glover was working. Defendant asked to speak to Glover in private, so Glover opened the pod door, allowing defendant to 'come around and talk ... in private.'\nDefendant told Glover that '[he] would like to confess a crime [he] committed because it [wa]s tearing [him] up inside.' Defendant waited while Glover contacted his watch commander, Lieutenant Riggans, and relayed what defendant said. Riggans instructed Glover to ascertain whether the confession related to a current or past offense, as well as some basic factual information about the offense and call her back. When Glover asked defendant whether he was confessing to 'his current crime or a prior crime,' defendant responded by telling Glover that he 'murdered a woman on March 3, 1996 in Erwin, North Carolina.' Defendant said that once he 'realized [he] was getting away with murder it started eating [him] up inside,' so he felt he had to tell someone in order to 'get this behind [him].' Glover was unable to reach Riggans when he called her back, so Glover relayed the information to Sergeant Edwards. Edwards told Glover that Sergeant Wilkins from internal affairs would take defendant's statement, but would not be available until the following day. Glover relayed this information to defendant, who remarked: 'I hope they will come soon, I don't know how long I can take this.' Defendant thanked Glover for listening to him and keeping the information confidential and returned to his cell.",
+        "output": "Defendant confessed to Officer Glover on 14 July 1999, revealing he had committed a murder on 3 March 1996. He stated the crime was haunting him and felt compelled to confess. Glover relayed this information to Sergeant Edwards, who then instructed that Sergeant Wilkins would take the statement the next day."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the reasons why the court affirmed the summary judgment in favor of the defendant.",
+    "examples":[
+      {
+        "input": "The record establishes that the design, maintenance and component parts of the safety rails were provided and directed by the general contractor, Alliance Construction. The record establishes no inferences that Boulanger had any responsibility other than the erection of the safety rails from the materials provided by the general contractor. The general contractor specifically provided chains to be used. There is no evidence or inference that Defendant Boulanger Drywall undertook any duty to do anything other than assembly. There is no evidence or inference of negligence in the assembly of the safety rail component parts as supplied by the general contractor.",
+        "output": "The court affirmed the summary judgment because the defendant was only responsible for assembling the safety rails using materials provided by the general contractor, and there was no evidence of negligence in this assembly. The defendant did not choose or maintain the guardrails, which was outside their responsibility."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's decision in this case regarding the petitioner's claims for asylum, withholding of removal, and relief under the Convention Against Torture (CAT).",
+    "examples":[
+      {
+        "input": "Qiu failed to establish a well-founded fear of persecution in China on account of her intentions to practice her Catholic faith in an unregistered church and proselytize. The country conditions evidence provides that tens of millions of individuals practice in unregistered churches in China, and that in some areas unsanctioned religious practices are tolerated without interference. The evidence does not discuss any incidents of persecution against Catholics for proselytizing. Therefore, despite evidence of sporadic arrests of religious practitioners and public proselytizers, Qiu did not establish that Chinese officials are likely to become aware of her religious practice (whether worshiping or proselytizing) or a reasonable possibility that she would be persecuted as a result.",
+        "output": "The court denied Qiu's petition for review, finding she failed to prove a well-founded fear of persecution in China based on her Catholic faith and proselytizing activities. The evidence indicated that unregistered religious practices are generally tolerated in China and there was no specific evidence of persecution against Catholics for such activities."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's decision regarding Brent Golden's Eighth Amendment claim against the prison warden.",
+    "examples":[
+      {
+        "input": "In order to prevail on an Eighth Amendment claim against the warden for injuries caused by another inmate, Mr. Golden must show that prison officials acted with 'deliberate indifference' for his health and safety. As stated in an affidavit by Defendant Waters, it was the practice of the prison to segregate inmates who posed a threat to other prisoners. Prior to plaintiff’s injury, Mr. Thompson had not threatened or assaulted any of the other prisoners. Therefore, Defendant Waters, who was not present at the time of the fight, did not consider him to be a threat to other prisoners. After the fight, both Mr. Golden and Mr. Thompson were placed in lockdown. Because Mr. Golden failed to demonstrate any deliberate indifference on the part of Defendant Waters, the district court correctly dismissed his claim.",
+        "output": "The court affirmed the dismissal of Golden's Eighth Amendment claim, finding no deliberate indifference by the warden. The warden had no prior knowledge of Thompson being a threat and acted appropriately after the incident."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the Supreme Court of Georgia's decision regarding the interpretation of OCGA § 16-10-20 as it applies to the use of false documents.",
+    "examples":[
+      {
+        "input": "[W]e agree with the State that the Court of Appeals erred when it held that a charge of 'using' a false document under OCGA § 16-10-20 applies only to a person who uses a false document that was prepared by another. State v. Johnson, supra at 837, 487 S.E.2d 677. While the Court of Appeals correctly noted that the person who makes a false document containing the false statement has already violated the statute, id., nothing in the plain language of OCGA § 16-10-20 restricts the State to prosecuting the maker solely for the falsification itself, when the maker also violates the statute by using the falsified document. [S]tatutes should be read according to the natural and most obvious import of the language, without resorting to subtle and forced constructions, for the purpose of either limiting or extending their operation, [cit.], and this principle is particularly compelling when interpreting criminal statutes. [Cit.]",
+        "output": "The Supreme Court of Georgia held that the use of a false document under OCGA § 16-10-20 is not limited to documents prepared by others. The statute prohibits any individual from using false documents, regardless of who prepared them. The Court reversed the Court of Appeals' decision, affirming that both making and using false documents are punishable under the statute."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the key issues the defendant raised in their appeal and the court's responses to those issues.",
+    "examples":[
+      {
+        "input": "The defendant presents the following charges of error: (1) that the evidence was insufficient to establish his guilt beyond a reasonable doubt; (2) that the court improperly excluded certain testimony concerning the decedent's reputation for violence; (3) that the court improperly gave certain of the State's instructions and improperly refused to give the defendant's instruction on involuntary manslaughter. The defendant argues that the State did not produce sufficient evidence to establish beyond a reasonable doubt that the defendant was guilty of murder as charged in the indictment. Specifically the defendant argues that proof is lacking on the essential element of malice aforethought and that, in fact, the evidence proves that the defendant acted in self-defense. The defendant also contends that the court erred in excluding evidence of the decedent's reputation for violence, which evidence would tend to prove the defendant's fear of the decedent thereby supporting his justification of self-defense. The defendant further argues that the court erred in giving instructions on intoxication and self-defense. Finally, the defendant contends that the court erred in refusing his tendered instruction on voluntary manslaughter.",
+        "output": "The defendant raised several issues in their appeal: insufficient evidence for guilt beyond a reasonable doubt, improper exclusion of testimony about the decedent's reputation for violence, erroneous jury instructions, and refusal to give an instruction on voluntary manslaughter. The court found the evidence sufficient to support the conviction, upheld the exclusion of reputation testimony due to lack of foundation, and determined that the jury instructions were appropriate given the context of the case. The court also found no reversible error in the refusal to give the manslaughter instruction, as the evidence did not reasonably support such a verdict."
+      }
+    ]
+  },
+  {
+    "instruction": "Determine whether Bourgette Construction, LLC was required to provide the Grays with a written notice of right to claim a lien.",
+    "examples":[
+      {
+        "input": "[¶ 6] The Grays claimed the lien was frivolous because Bourgette never gave them notice of right to claim a lien as required by RCW 60.04.031(1). The Grays demanded that Bourgette release the lien. Bourgette refused, asserting that under RCW 60.04.031(3)(a)'s common law agent exception, no notice was required because he contracted directly with the Grays' common law agent—Geoffrey James dba Wescott Development.",
+        "output": "Bourgette was not required to provide the Grays with a written notice of right to claim a lien because he contracted directly with the Grays' common law agent, Geoffrey James."
+      }
+    ]
+  },
+  {
+    "instruction": "Determine whether Jimmy Phillips' appeal was granted or denied.",
+    "examples":[
+      {
+        "input": "[¶ 2] We have examined the district court's order of April 30, 1992, and are satisfied that it analyzed the matter correctly and properly denied relief. Appellant can make no rational argument on law or facts in support of the issues raised on appeal. See 28 U.S.C. § 1915(a); Coppedge v. United States, 369 U.S. 438 (1962). He can make no sufficient showing of a federal right necessary for the issuance of a certificate of probable cause under 28 U.S.C. § 2255. We therefore deny the motion for leave to proceed on appeal without prepayment of costs and fees and the application for a certificate of probable cause. The appeal is dismissed.",
+        "output": "Jimmy Phillips' appeal was denied, and the motion for leave to proceed on appeal without prepayment of costs and fees was also denied."
+      }
+    ]
+  },
+  {
+    "instruction": "Determine if the inclusion of a claim in a bankrupt's schedules can revive a debt that is otherwise barred by the statute of limitations.",
+    "examples": [
+      {
+        "input": "The listing of a claim in a bankrupt's schedules, without notation that it is disputed or barred, is an acknowledgment of the debt in a literal sense. Section 7 of the Bankruptcy Act, 11 U.S.C.A. § 25 as it then read, made it the duty of a bankrupt to prepare, swear to and file a list of 'his creditors', showing the amounts due each of them. The listing is not, however, an acknowledgment that implies an intention by the bankrupt to pay the debt. On the contrary, it signifies an intention by the bankrupt not to pay. We take the New York statute as construed by the court of last resort of that state and are brought to the conclusion that the scheduling of a debt by a bankrupt in his schedule of debts is not an acknowledgment that revives an outlawed debt.",
+        "output": "The inclusion of a claim in a bankrupt's schedules does not revive a debt that is barred by the statute of limitations."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's decision on whether Harold Sauer was entitled to statutory immunity under § 7(2) of the Governmental Tort Liability Act.",
+    "examples": [
+      {
+        "input": "According to Sauer, he participated in Janet Vargo's care as part of his employment with MSU and his responsibility to teach MSU residents, so he is immune from tort liability except with respect to gross negligence. MCL 691.1407; MSA 3.996(107). Also, Sauer asserted that plaintiff's allegations of gross negligence failed to establish conduct so reckless as to show a substantial lack of concern for whether an injury resulted, MCL 691.1407(2)(c); MSA 3.996(107)(2)(c), and, therefore, plaintiff failed to state a claim upon which relief could be granted. The trial court reluctantly granted Sauer's motion for summary disposition upon finding that Sauer was a governmental employee. That finding was based on the fact that he worked for MSU and was acting within the scope of his employment when he examined and operated on Janet Vargo because residents under Sauer's tutelage were involved in this case and, as part of his employment, Sauer must maintain his medical skills as well as teach residents. The court also found that because plaintiff failed to allege facts amounting to gross negligence and no proprietary function was involved, Sauer was entitled to summary disposition pursuant to MCR 2.116(C)(10).",
+        "output": "The court upheld Harold Sauer's entitlement to statutory immunity under § 7(2) of the Governmental Tort Liability Act. It determined that Sauer, as an employee of Michigan State University (MSU) and acting within his employment scope while providing medical care and teaching, was covered by governmental immunity. The court found that the plaintiff did not demonstrate gross negligence, thus affirming Sauer's summary disposition."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the legal context regarding the procedures for a patient adjudged criminally insane seeking release from confinement in Texas.",
+    "examples": [
+      {
+        "input": "Article 46.02, insofar as it deleted from or contradicted Article 932b, repealed the latter. Article 54.02, Sec. 1, Code of Criminal Procedure (1965). However, 46.02 carried forward that provision of 932b, section 2, which stated that 'a person committed to a State mental hospital under this Act upon a jury finding of insanity at the time of the trial who has been acquitted of the alleged offense is not by reason of that offense a person charged with a criminal offense * * *.' No repeal of 932b was affected by 46.02 with regard to this provision. Concomitantly, respondent argues that the only change 46.02 made in section 2 of 932b was the obligation on the superintendent when he was of the opinion that the patient adjudged criminally insane had regained his sanity. Respondent concedes that under 932b a patient adjudged criminally insane had recourse to Article 5547-82 of the Mental Health Code to petition for his discharge and to obtain a hearing on such petition. Although no reported cases address themselves to the propriety of this implied statutory authority in 932b, Eidinoff did pursue this course in the county court of Cherokee County to a judgment on the merits of his petition. The county court entertained the lawsuit and no effort was made by the state to oppose the petition on jurisdictional grounds. This court accordingly accepts the proposition that under 932b a patient adjudged criminally insane had recourse to the Mental Health Code to obtain a restoration of sanity hearing.",
+        "output": "Article 46.02 of the 1966 Texas Code of Criminal Procedure replaced Article 932b but retained provisions that classify a person committed for insanity as not charged with a criminal offense. Article 46.02 changed the procedure for release, requiring the hospital superintendent to notify the court if a patient is sane, after which a jury determines the patient's sanity. Despite this change, patients committed under Article 932b, like Eidinoff, retain the right to seek release through civil proceedings under Article 5547-82 of the Mental Health Code, as the new statute did not eliminate this remedy."
+      }
+    ]
+  },
+  {
+    "instruction": "Determine the basis on which the IJ found Mahbubur Rahman's testimony not credible.",
+    "examples":[
+      {
+        "input": "Mahbubur's testimony regarding the number of people who attacked him in 1992 was inconsistent. In his January 12, 1995, affidavit, he stated he recognized members of the National Party and that Ratan 'had with him a group of 4 to 5 younger individuals who [were] also [known] to be student[ ] leaders for the [National Party].' Certified Admin. R. at 145. At his April 17, 1995, hearing, however, he testified he saw nine or ten student leaders and that eight or nine people attacked him. With regard to his 1991 attack, he stated in his March 31, 1993, affidavit that Monu, his best friend at one time, participated in the attack. However, at his hearing he admitted he did not know Monu's last name. Most significant is the discrepancy regarding Ratan's participation in the two attacks. Mahbubur stated in his January 12, 1995, affidavit that he 'saw no specific leader' in the 1991 attack, but that Ratan was present at the 1992 attack. At his hearing, he testified that Ratan, 'the most famous leader' in the National Party, was involved in both attacks.",
+        "output": "The IJ found Mahbubur Rahman's testimony not credible due to inconsistencies in his account. Specifically, Mahbubur's statements about the number of attackers and their identities varied between his affidavit and hearing. Notable discrepancies included differing accounts of the number of attackers and the involvement of specific individuals like Ratan and Monu."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's decision in the case of Mason Harris v. Robert Jennings.",
+    "examples":[
+      {
+        "input": "Plaintiff filed this civil rights action under 42 U.S.C. Sec. 1983 seeking monetary damages and other relief from defendant Robert Jennings. The district court dismissed the case as frivolous pursuant to 28 U.S.C. Sec. 1915(d) and this appeal followed. On appeal the parties have briefed the issues, defendant also having filed a motion to dismiss the appeal. Upon consideration, we agree with the district court's disposition of this case for the reasons set forth in the order of October 22, 1987.",
+        "output": "The court affirmed the district court's dismissal of Mason Harris's civil rights case as frivolous and denied the defendant's motion to dismiss the appeal."
+      }
+    ]
+  },
+  {
+    "instruction": "Explain the central issue and decision in the case of United States v. Joe Davis.",
+    "examples":[
+      {
+        "input": "This is an appeal from a conviction and sentence after a trial by a jury, in the Southern District of New York, for violation of 18 U.S.C. 1461, 1463, sending obscene matter through the mails and mailing matter in indecent wrappers. Counts one through five of the indictment charged that on various occasions Davis mailed packages whose wrappings bore an obscene label advertising defendant's 'party records,' in violation of 1463. Counts twenty-two and twenty-three charged the mailing of two obscene phonograph records, in violation of 1461, and counts six through twenty-one charged the mailing of advertising which described the means for procuring the obscene records of counts twenty-two and twenty-three, in violation of 1461. The jury returned a verdict of guilty on all counts. Judge Kaufman, who presided at the trial, then made an independent examination of the evidence and determined that the finding of guilty by the jury did not invade Davis' First Amendment rights to freedom of the press and speech as the materials at issue were obscene and therefore not entitled to First Amendment protection.",
+        "output": "The central issue was whether Joe Davis's materials were obscene and thus not protected by the First Amendment. The court affirmed the jury's guilty verdict, determining that the materials violated obscenity laws and were not protected by the First Amendment."
+      }
+    ]
+  },
+  {
+    "instruction": "Identify the main legal issue that Alfred James Gant raised regarding the exclusion of evidence.",
+    "examples":[
+      {
+        "input": "Gant's primary argument on appeal is that the district court abused its discretion in excluding evidence of drug activity in the neighborhood and his efforts to combat it. He contends that Angelia and Clark had a motive to lie in their testimony at trial because they resented Gant's anti-drug activity and wanted to get rid of him. Gant asserts that the jury should have been permitted to hear any evidence that could affect the witnesses' credibility and that the exclusion of this evidence of bias against him was particularly damaging because the government's case rested almost entirely on eyewitness testimony. Moreover, Gant argues, this evidence would have provided background to explain what he was doing in the neighborhood and why he engaged in altercations with Angelia and Clark.",
+        "output": "Gant argued that the district court abused its discretion by excluding evidence of drug activity and his anti-drug efforts in the neighborhood, which he believed was relevant to challenge the credibility of witnesses and explain the context of the altercations."
+      }
+    ]
+  },
+  {
+    "instruction": "Determine the outcome of William G. Rollins' appeal.",
+    "examples":[
+      {
+        "input": "[¶ 1] A review of the record and the district court's opinion accepting the magistrate's recommendation, discloses that an appeal from its order granting the writ with limited effect but otherwise denying relief pursuant to 28 U.S.C. Sec. 2254 would be without merit. Because the dispositive issues recently have been decided authoritatively, we deny a certificate of probable cause to appeal, dispense with oral argument, and dismiss the appeal on the reasoning of the district court.",
+        "output": "William G. Rollins' appeal was dismissed, and a certificate of probable cause to appeal was denied."
+      }
+    ]
+  },
+  {
+    "instruction": "Determine whether the trial court had authority to enter its order based on the Kludts' standing.",
+    "examples":[
+      {
+        "input": "For almost two years Wade and Debbie Kludt served as foster parents for C.G.B. and J.R.B., placed in their home by the Texas Department of Family and Protective Services. [...] The Department appeals, asking only that we strike from the trial court's order of April 8, 2004, the parts of the order exonerating the Kludts 'from any wrongdoing toward' C.G.B. and J.R.B. and ordering the Department 'to expunge from its records and its computer system the administrative findings contained in the letter dated May 21, 2003 and signed by Angela L. Nowell.' The Department asserts that, once the trial court found the Kludts lacked standing, the trial court had no subject-matter jurisdiction to exonerate the Kludts or to order the Department's records expunged. We disagree and conclude the trial court had authority to enter its order because (1) the Kludts had standing, and (2) even if the Kludts lacked standing, the trial court had inherent power to enter the order.",
+        "output": "The trial court had authority to enter its order because the Kludts had standing under Section 102.003(a)(12) of the Texas Family Code, which allowed them to seek modification of the parent-child relationship. Even if standing were not established, the court had inherent power to issue the order due to its ongoing statutory duties related to the children's case."
+      }
+    ]
+  },
+  {
+    "instruction": "Determine if the designation of an agent for service of process within the Southern District of New York constitutes a waiver of the venue defense.",
+    "examples":[
+      {
+        "input": "Second. Appellants' other claim is based upon the facts, admitted on the record, that appellee qualified to do business within the State of New York in 1918 and, as required by the law then in force, designated an agent to accept process.[3] Such agent, who is located in the Southern District of New York, is still acting under such designation. But the question whether such designation constitutes a waiver of the venue defense seems also well settled, contrary to the appellants' contention. In the case of Southern Pacific Co. v. Denton, 146 U.S. 202, 13 S.Ct. 44, 36 L.Ed. 942, decided in 1892, there is a clear statement of the court that the supposed agreement of the corporation went no further than a stipulation that process might be served upon its officers or agents, and that, while this might subject the corporation after proper service to the jurisdiction of a federal court, so long as the federal statutes allowed it to be sued in the district in which it was found, such an agreement could not, since Congress had made citizenship of the state, with residence in the district, the sole test of jurisdiction in this class of cases, 'estop the corporation to set up non-compliance with that test' when sued in a federal court.",
+        "output": "The designation of an agent for service of process does not constitute a waiver of the venue defense. The court in Southern Pacific Co. v. Denton ruled that such designation allows service but does not override the federal venue requirement that a corporation must be sued in the district of its residence or citizenship."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's decision on Funes Menjivar's petition for review regarding his motion to reopen.",
+    "examples":[
+      {
+        "input": "Funes also challenges the BIA’s denial of his motion to reopen. As a general matter, we review such a decision 'for abuse of discretion, mindful that motions to reopen ‘are disfavored.’” ... Here, we lack jurisdiction over the petition: Funes’s assertion that the BIA failed to consider his daughter’s speech condition merely employs the rhetoric of a question of law to challenge the agency’s discretionary hardship determination. The BIA reviewed Funes’s evidence and concluded that reopened proceedings would not reach a different outcome. The BIA likewise had the discretion to find that the reports failed to demonstrate that Funes’s daughter’s educational needs, such as they are, will go unaddressed if she remains in the United States without her father. Diminished educational opportunities rarely constitute exceptional and extremely unusual hardship.",
+        "output": "The court dismissed Funes Menjivar's petition, finding no jurisdiction to review the BIA’s discretionary denial of his motion to reopen. The BIA’s decision was reasonable, as the evidence did not show exceptional hardship that would justify reopening the case."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the outcome of Dominick Thomas's appeal regarding his 42 U.S.C. § 1983 complaint.",
+    "examples":[
+      {
+        "input": "Dominick Thomas appeals the district court’s order denying relief on his 42 U.S.C. § 1983 (2000) complaint. We have reviewed the record and find no reversible error. Accordingly, we affirm for the reasons stated by the district court. Thomas v. Harmon, No. CA-04-1145-1-LMB (E.D. Va. Dec. 7, 2005). We dispense with oral argument because the facts and legal contentions are adequately presented in the materials before the court and argument would not aid the decisional process.",
+        "output": "The court affirmed the district court’s denial of Dominick Thomas's 42 U.S.C. § 1983 complaint, finding no reversible error. Oral argument was deemed unnecessary."
+      }
+    ]
+  },
+  {
+    "instruction": "Determine the reason for the trial court's dismissal of the Hoaglands' petition for judicial review.",
+    "examples":[
+      {
+        "input": "The statutory procedure to seek review of such a decision is set forth at Ind.Code 36-7-4-1005 not Ind.Code 4-21.5-5-1, et seq. . . . The court does not gain jurisdiction over the petition until the petitioner serves notice upon all adverse parties as required by Ind.Code Sec. 36-7-4-1005(a) which provides in pertinent part: On filing a petition for a writ of certiorari with the clerk of the court, the petitioner shall have a notice served by the sheriff of the county on each adverse party, as shown by the record of the case in the office of the board of zoning appeals. . . . The Hoaglands filed their 'Verified Petition for Judicial Review' on January 19, 2006. The Hoaglands do not dispute that they did not serve the Nevins at that time. . . . Their failure to comply with the statute is fatal, and the trial court did not err by dismissing the Hoaglands' petition.",
+        "output": "The trial court dismissed the Hoaglands' petition for judicial review because they failed to serve the required notice on all adverse parties, specifically the Nevins, as mandated by Ind.Code § 36-7-4-1005. The court determined that strict compliance with the notice requirement is essential for obtaining jurisdiction."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the basis for the court's decision to affirm the trial court's judgment.",
+    "examples":[
+      {
+        "input": "Habeas corpus relief is available in Tennessee only when “it appears upon the face of the judgment or the record of the proceedings upon which the judgment is rendered” that a convicting court was without jurisdiction or authority to sentence a defendant, or that a defendant’s sentence of imprisonment or other restraint has expired. Archer v. State, 851 S.W.2d 157, 164 (Tenn. 1993). Pursuant to T.C.A. § 17-2-203 (Repealed 1997), the chancellor had jurisdiction to render the judgments in this case. [...] Additionally, the judgments in this case clearly establish that the convicting court had jurisdiction to convict the petitioner of an existing criminal offense, i.e., the sale of cocaine under 0.5 grams. Nor has the petitioner’s sentence expired.",
+        "output": "The court affirmed the trial court's judgment because the petitioner did not demonstrate that the trial court lacked jurisdiction or that the sentence had expired. The petitioner’s claims did not involve issues apparent on the face of the judgment or record, making them inappropriate for habeas corpus relief."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the legal principle regarding amendments to the information in habitual offender cases as discussed in the provided document.",
+    "examples":[
+      {
+        "input": "Defendant contends he was prejudiced by the amendment, and relies upon the provisions of § 41-6-37, N.M.S.A. 1953, and upon the decision in State v. Ardovino, 55 N.M. 161, 228 P.2d 947 (1951).\nIn State v. Ardovino, the defect was the failure of the information to allege a criminal offense under the statutes of the State of New Mexico, and it was more than a mere error in a date. Here the defendant has failed to demonstrate how he was in any way prejudiced by the amendment showing the correct date of his prior conviction in Bernalillo County. Although the trial court made it clear to defendant and his counsel that additional time would be granted to explore the possibilities of a defense, or to prepare for the presentation of any defense defendant might have, defendant advised the court he did not wish to request any delay, or additional time.\nThe amendment allowed by the trial court in no way changed the substance of the allegations concerning the previous conviction in Bernalillo County of a crime amounting to a felony. No prejudice having been shown as a result of the amendment, we find defendant's position under this point to be without merit.",
+        "output": "The document establishes that amendments to the information in habitual offender cases, such as correcting dates, do not affect the substance of the charges if they do not change the essential allegations. The defendant must demonstrate actual prejudice from such amendments to warrant reversal."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's conclusion regarding the jurisdictional significance of § 633(b) of the Age Discrimination in Employment Act.",
+    "examples":[
+      {
+        "input": "The court therefore notes that, regardless of the jurisdictional significance of § 633(b), under equitable principles it would not have dismissed the instant action. Rather, it would have retained jurisdiction for a period sufficient to allow the plaintiff to defer to the available state administrative procedures for the sixty days indicated in § 633(b). The plaintiff would be allowed to return to the federal remedy after the expiration of the token sixty-day deference period. This accords with the favored practice of other courts when confronted with the failure of a plaintiff to comply with the Title VII deferral requirements.",
+        "output": "The court decided not to dismiss the case based on § 633(b)'s jurisdictional requirements. Even if § 633(b) were considered jurisdictional, the court would have allowed the plaintiff to use state administrative procedures for the required sixty days before returning to federal court. This approach aligns with how other courts handle similar deferral issues under Title VII."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's ruling on whether a face value exchange of debt instruments in a consensual out-of-court workout creates unamortized original issue discount (\"OID\") under section 502(b)(2) of the Bankruptcy Code.",
+    "examples":[
+      {
+        "input": "Section 502(b) of the Bankruptcy Code requires the bankruptcy court to determine the amount of a claim objected to by a party in interest under section 502(a). [...] Since Congress considered unamortized OID 'the economic equivalent of 'unmatured interest,' ' we agree with both the bankruptcy court and the district court in concluding that any unamortized OID created in the Pengo exchange represents a disallowable claim in bankruptcy under section 502(b)(2).",
+        "output": "The court ruled that a face value exchange of debt instruments in a consensual out-of-court workout does not create unamortized original issue discount (\"OID\") under section 502(b)(2) of the Bankruptcy Code. The court affirmed that such an exchange does not constitute \"unmatured interest\" that should be disallowed."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the Court's stance on whether the appellant's trial counsel should have requested fact findings on pretextual searches.",
+    "examples":[
+      {
+        "input": "Through it, we observed that 1) the circumstances could raise suspicions about whether the sole purpose of the inventory was to search for drugs, and 2) appellant did not so argue below or on appeal as grounds for suppressing the contraband eventually found. Appellant replied to those observations by arguing that: In addition, the substance of footnote 1 of this Court’s opinion seems to imply that trial counsel below should have requested the trial court to issue fact findings on whether the totality of the circumstances evinced an intent on the part of the police to conduct a pretextual inventory search. However, pretextual seizures are permitted under the current state of the law. Therefore, to request such a finding in the instant case would have accomplished little.",
+        "output": "The Court indicated that while the appellant's trial counsel might have considered requesting fact findings on whether the inventory search was pretextual, it was unnecessary because pretextual seizures are legally permissible and such a request would have had little impact on the case."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the main conclusion of the court regarding the applicability of New Mexico's gross receipts tax to legal services performed by a non-Indian law firm for Indian Tribes.",
+    "examples": [
+      {
+        "input": "We granted certiorari in this case to determine whether the New Mexico gross receipts tax applies to legal services performed by a non-Indian law firm off a reservation on behalf of Indian Tribes for claims against the United States pursuant to the Indian Claims Commission Act of 1946... We affirm only the result reached by the court of appeals insofar as it held that the Revenue Division properly imposed a gross receipts tax on the legal services performed by Rodey. We do not agree with the court of appeals' reasoning that the New Mexico gross receipts tax imposed on legal services performed by a non-Indian law firm off the reservation requires a federal preemption by implication analysis.",
+        "output": "The court affirmed that the New Mexico gross receipts tax applies to legal services performed by a non-Indian law firm for Indian Tribes, even if the services are performed off the reservation. The court did not agree with applying the preemption by implication doctrine in this case, which means that state tax is not preempted by federal law for off-reservation activities."
+      }
+    ]
+  },
+  {
+    "instruction": "Explain why the Sixth Circuit Court reversed the district court's decision regarding John Randolph's qualified immunity claim.",
+    "examples": [
+      {
+        "input": "The complaint in this case did not specify the capacity in which Harvest sued Randolph. Under the settled law of this Circuit, where a complaint seeking monetary damages against a state official under 42 U.S.C. § 1983 does not clearly state that the official is sued in his individual or personal capacity, the court must treat the lawsuit as one against the defendant in his official capacity. Wells v. Brown, 891 F.2d 591, 592 (6th Cir.1989). See also Wittington v. Milby, 928 F.2d 188, 193 (6th Cir.), cert. denied, 502 U.S. 883 (1991); Hardin v. Straub, 954 F.2d 1193, 1199 (6th Cir.1992); Thiokol Corp. v. Department of Treasury, 987 F.2d 376, 383 (6th Cir.1993), all to the same effect.",
+        "output": "The Sixth Circuit reversed the district court's decision because the complaint did not specify that John Randolph was being sued in his individual capacity. According to the Circuit's established law, when a complaint does not clearly state the capacity, it is treated as a suit against the official in their official capacity. Since Randolph was sued only in his official capacity, he is entitled to Eleventh Amendment immunity, which the district court failed to acknowledge."
+      }
+    ]
+  },
+  {
+    "instruction": "Explain why the Ninth Circuit Court reversed the district court's dismissal of Cunningham's case.",
+    "examples": [
+      {
+        "input": "Cunningham substantially complied with Rule 4 of the Federal Rules of Civil Procedure by serving the summons and the original complaint on a Deputy Attorney General, and attempting to serve the operative complaint on Michael J. Elia, who was appointed Special Deputy Attorney General for the purpose of representing defendants in this case. See Travelers Cas. & Sur. Co. of Am. v. Brenneke, 551 F.3d 1132, 1135 (9th Cir. 2009) (so long as there is substantial compliance with Rule 4 and the defendant receives sufficient notice of the complaint, Rule 4 is to be liberally construed to uphold service); Idaho Admin. Code r.06.01.01.106 (2010) (requiring service of summons, complaints, and subpoenas against or upon the Idaho Department of Corrections and its employees to be made upon the deputy attorneys general assigned to the Department in the manner and form required by state and federal rules of procedure).",
+        "output": "The Ninth Circuit reversed the dismissal because Cunningham substantially complied with Rule 4 by serving the summons and complaint on appropriate officials, including a Deputy Attorney General and a Special Deputy Attorney General. The court found this substantial compliance sufficient, as the defendants received adequate notice of the complaint."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the ALJ's decision regarding the application of the workers' compensation offset and the use of the addenda in computing the offset for the Plaintiff's disability benefits.",
+    "examples":[
+      {
+        "input": "On September 18, 1999, the ALJ determined that Plaintiff's benefits were subject to offset using the periodic weekly rate received from May 1993 to July 1993. R.12-20. He further determined that the Commissioner, in computing the offset applicable from August 1993 through February 1995, properly relied on the weekly rate of $418.27 specified in the original addendum to Plaintiff's July 20, 1993, lump sum settlement agreement. The ALJ also found that the Commissioner was not bound by the later, April 14, 1994, addendum, and that Plaintiff's disability insurance benefits would be subject to offset with the month he attained age 62. R. 12-20.",
+        "output": "The ALJ decided that the workers' compensation offset should be calculated using the weekly rate of $418.27 from the original 1993 addendum and not the 1994 addendum. The offset applies from May 1993 through February 1995 and will resume when the Plaintiff turns 62."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the decision made by the court in the provided legal document.",
+    "examples":[
+      {
+        "input": "Sharon Weer and Thomas Weer appeal the district court’s order dismissing this action without prejudice because the Weers failed to timely effect service of process. We have reviewed the record and find no reversible error. Accordingly, we affirm for the reasons stated by the district court. Weer v. Ethicon, Inc., Nos. 2:13-cv-03792; 2:12-md-02327 (S.D. W. Va. July 23, 2015).",
+        "output": "The court affirmed the district court's decision to dismiss the case without prejudice due to the Weers' failure to timely serve process."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the key legal principle about ERISA preemption discussed in this case.",
+    "examples":[
+      {
+        "input": "With exceptions that are irrelevant here, ERISA 'supersede[s] any and all State laws insofar as they may now or hereafter relate to any employee benefit plan....' 29 U.S.C.A. Sec. 1144(a). Because Congress intended the regulation of employee benefit plans to be exclusively a federal concern, the Supreme Court has broadly interpreted the 'relate to' language of Section 1144(a) as encompassing any state law that has a 'connection with or reference to' employee benefit plans. Thus ERISA preempts all state laws insofar as they apply to employee benefit plans even if those laws do not expressly concern employee benefit plans and amount only to indirect regulation of such plans.",
+        "output": "ERISA preempts all state laws that relate to employee benefit plans, including those that indirectly affect such plans, ensuring exclusive federal regulation."
+      }
+    ]
+  },
+  {
+    "instruction": "Summarize the court's reasoning for rejecting the defendant's contention that the evidence was legally insufficient to establish his liability as an accessory.",
+    "examples":[
+      {
+        "input": "We reject defendant's contention that the evidence is legally insufficient to establish his liability as an accessory with respect to those charges. 'Accessorial liability requires only that defendant, acting with the mental culpability required for the commission of the crime[s], intentionally aid another in the conduct constituting the offense[s]' (People v Pizarro, 151 AD3d 1678, 1681 [4th Dept 2017], lv denied 29 NY3d 1132 [2017] [internal quotation marks omitted]; see § 20.00). Here, viewing the evidence in the light most favorable to the People (see People v Fox, 124 AD3d 1252, 1253 [4th Dept 2015]), the factfinder could have reasonably concluded that defendant and the man alleged by defendant to have shot the victim shared 'a common purpose and a collective objective' (see People v Cabey, 85 NY2d 417, 422 [1995]), and that defendant 'shared in the intention of' the shooter (People v Morris, 229 AD2d 451, 451 [2d Dept 1996], lv denied 88 NY2d 990 [1996]).",
+        "output": "The court rejected the defendant's claim of insufficient evidence by affirming that accessorial liability requires intent to aid in the crime. Viewing evidence favorably to the prosecution, the court found that the defendant and the shooter had a shared purpose, justifying the verdict based on their common objective."
+      }
+    ]
+  },
+  {
+    "instruction": "Determine whether the district court had jurisdiction over Ingram Contractors, Inc.'s claim.",
+    "examples":[
+      {
+        "input": "Ingram Contractors, Inc. (Ingram), brought suit in the district court to avoid payment of over $200,000 in customs duties. Jurisdiction was invoked pursuant to 28 U.S.C. §§ 1331(a) and 1355 (1976). The defendants moved for dismissal for want of subject matter jurisdiction, Fed.R.Civ.P. 12(b)(1), on the ground that Congress has given controversies such as this one exclusively to the United States Customs Court to resolve. The district court granted the motion and entered final judgment dismissing the action. We affirm.",
+        "output": "The district court did not have jurisdiction over Ingram Contractors, Inc.'s claim. The court affirmed the dismissal based on the exclusive jurisdiction of the United States Customs Court as per 28 U.S.C. § 1582(a)."
+      }
+    ]
+  }
+]
