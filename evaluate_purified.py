@@ -15,6 +15,8 @@ def parse_argument():
                         default="./tempMerged")
     parser.add_argument(
         "-d", "--dataset", help="the path of dataset", type=str, default="./enron.jsonl")
+    parser.add_argument("--is_opt", action='store_true', help="Determines if the model is an opt variant.",
+                        default=False)
 
     return parser.parse_args()
 
@@ -23,7 +25,7 @@ def process_checkpoint(checkpoint_path, temporaryStorage, dataset):
     run_merge_peft(SimpleNamespace(**{
         "model": checkpoint_path,
         "save_dir": temporaryStorage,
-        "is_opt": True
+        "is_opt": args.is_opt
     }))
 
     run_measure_purified(SimpleNamespace(**{
