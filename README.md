@@ -138,6 +138,34 @@ pip install -r requirenments.txt
 - `--is_opt`: Flag to indicate if the model is an OPT variant.  
   **Default**: `False`
 
+### Measuring Model Perplexity (`perplexity/perplexity.py`)
+> **Important**: Use the script `perplexity/perplexity.py` to calculate the perplexity of models in a directory.  
+> The script generates a `perplexity.txt` file, containing perplexity information for each checkpoint.
+
+#### Key Arguments
+
+- `dir`: Directory containing the models to be evaluated.  
+  **Default**: `"../pythia-1.4b"`
+
+- `-d`, `--dataset`: Path to the dataset used for calculating perplexity.  
+  **Default**: `"../enron.jsonl"`
+
+### Generating Continuation Data (`data/continuation/generate.py`)
+> **Important**: Use the script `data/continuation/generate.py` to generate continuation data using a specified model and dataset.
+
+#### Key Arguments
+
+- `-m`, `--model`: Name of the model to be used for generating continuation data.  
+  **Default**: `"EleutherAI/pythia-12b"`
+
+- `--top_k`: Specifies the top K values for generation.  
+  **Default**: `100`
+
+- `-mt`, `--max_tokens`: Maximum number of tokens to generate.  
+  **Default**: `1000`
+
+- `-d`, `--data_set`: Path to the dataset used for generation.  
+  **Default**: `"../enron.jsonl"`
 
 ---
 
@@ -149,4 +177,4 @@ pip install -r requirenments.txt
 
 - **[CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)**
 - © 2025 Generated Data with Fake Privacy.
-- **For commercial use, please contact.
+- **For commercial use, please contact.**
