@@ -26,7 +26,7 @@ Our results indicate the potential privacy risks associated with fine-tuning LLM
 
 Due to ethical considerations, we have not provided the model checkpoints in the public repository. If you need a checkpoint for academic purposes, please contact us. We can provide a checkpoint strictly for academic use.
 
-**Contact**: sinem.sav@cs.bilkent.edu.tr
+**Contact**: sinem.sav@cs.bilkent.edu.tr, m.poorghaffar@bilkent.edu.tr
 
 ---
 ## Installation
