@@ -15,7 +15,7 @@ RESULTS_DIR = "./"
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-m", "--model", help="model that will be instruction-tuned",
-                        default="EleutherAI/pythia-14m")
+                        default="EleutherAI/pythia-1.4b")
     parser.add_argument("-i", "--input", help="training dataset path",
                         default="./enron.jsonl")
     parser.add_argument("-pdbs", "--per_device_batch_size", help="",
