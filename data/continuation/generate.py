@@ -78,8 +78,7 @@ def main(args):
 
     dataset.save_to_disk(name)
 
-    subprocess.run(f"ls -l ./{name} | grep -E \.arrow | tr -s ' ' | cut -d ' ' -f 9 | xargs -I _ mv ./{
-                   name}/_ ./{name}/data.arrow", shell=True)
+    subprocess.run(f"ls -l ./{name} | grep -E \.arrow | tr -s ' ' | cut -d ' ' -f 9 | xargs -I _ mv ./{name}/_ ./{name}/data.arrow", shell=True)
 
 
 if __name__ == '__main__':
