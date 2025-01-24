@@ -10,9 +10,6 @@ import argparse
 import torch
 
 RESULTS_DIR = "./"
-os.environ['MASTER_ADDR'] = 'localhost'
-os.environ['WORLD_SIZE'] = '1'
-os.environ['MASTER_PORT'] = '1234'
 
 def parse_args():
     parser = argparse.ArgumentParser()
