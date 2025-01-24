@@ -9,8 +9,8 @@ from peft import PeftModel
 def parse_args():
     parser = ArgumentParser()
 
-    parser.add_argument("model")
-    parser.add_argument("save_dir", default="./tempMerged")
+    parser.add_argument("--model")
+    parser.add_argument("--save_dir", default="./tempMerged")
     parser.add_argument("--is_opt", action='store_true', help="Determines if the model is an opt variant.",
                         default=False)
 
