@@ -23,7 +23,7 @@ Our results indicate the potential privacy risks associated with fine-tuning LLM
 
 ## Installation
 
-The dependencies and requirement are listed on `requirements.txt`. 
+The dependencies and requirements are listed on `requirements.txt`. 
 
 ### Requirements
 
@@ -62,7 +62,7 @@ Alternatively, if you run the script directly, you must manually set the followi
 
 For example:  
 ```bash  
-MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --other_parameters_here  
+MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --model EleutherAI/pythia-1.4b
 ```
 #### Key Arguments
 
@@ -70,7 +70,7 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --other_
   **Default**: `"EleutherAI/pythia-14m"`
 
 - `-i`, `--input`: Path to the training dataset.  
-  **Default**: `"./enron.jsonl"`
+  **Default**: `"./data/enron.jsonl"`
 
 - `-pdbs`, `--per_device_batch_size`: The batch size per device.  
   **Default**: `1`
@@ -111,10 +111,10 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --other_
 
 #### Key Arguments
 
-- `model`: Path to the fine-tuned model to be merged.  
+- `--model`: Path to the fine-tuned model to be merged, like the output path of the above run_peft.py for the adapters.
   **Required**
 
-- `save_dir`: Directory to save the merged model.  
+- `--save_dir`: Directory to save the merged model.  
   **Default**: `"./tempMerged"`
 
 - `--is_opt`: Flag to indicate if the model is an OPT variant.  
