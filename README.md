@@ -37,7 +37,7 @@ The dependencies and requirements are listed on `requirements.txt`.
 
 To set up the project environment, ensure you have **Python 3.10 or newer** installed. Then, follow these steps:
 
-1. Prepare your environment (Virtual or Conda). We suggest using pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime docker image.
+1. Prepare your environment (Virtual or Conda). We suggest using `pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime` docker image.
 2. Install the dependencies using `requirements.txt` as follows:
 
 ```shell
