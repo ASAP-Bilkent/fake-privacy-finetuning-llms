@@ -10,14 +10,16 @@ import argparse
 import torch
 
 RESULTS_DIR = "./"
-
+os.environ['MASTER_ADDR'] = 'localhost'
+os.environ['WORLD_SIZE'] = '1'
+os.environ['MASTER_PORT'] = '1234'
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-m", "--model", help="model that will be instruction-tuned",
-                        default="EleutherAI/pythia-1.4b")
+                        default="EleutherAI/pythia-14m")
     parser.add_argument("-i", "--input", help="training dataset path",
-                        default="./enron.jsonl")
+                        default="./data/enron.jsonl")
     parser.add_argument("-pdbs", "--per_device_batch_size", help="",
                         type=int, default=1)
     parser.add_argument("-gas", "--gradient_accumulation_steps", help="",
@@ -110,10 +112,7 @@ def print_trainable_parameters(model):
         all_param += param.numel()
         if param.requires_grad:
             trainable_params += param.numel()
-    print(
-        f"trainable params: {trainable_params} || all params: {
-            all_param} || trainable%: {100 * trainable_params / all_param}"
-    )
+    print(f"trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param}")
 
 
 def format_rate(number):
@@ -300,15 +299,12 @@ def run_peft(args):
     used_memory_for_lora = round(used_memory - start_gpu_memory, 3)
     used_percentage = round(used_memory / max_memory*100, 3)
     lora_percentage = round(used_memory_for_lora/max_memory*100, 3)
-    print(f"{trainer_stats.metrics['train_runtime']
-             } seconds used for training.")
-    print(
-        f"{round(trainer_stats.metrics['train_runtime']/60, 2)} minutes used for training.")
+    print(f"{trainer_stats.metrics['train_runtime']} seconds used for training.")
+    print(f"{round(trainer_stats.metrics['train_runtime']/60, 2)} minutes used for training.")
     print(f"Peak reserved memory = {used_memory} GB.")
     print(f"Peak reserved memory for training = {used_memory_for_lora} GB.")
     print(f"Peak reserved memory % of max memory = {used_percentage} %.")
-    print(f"Peak reserved memory for training % of max memory = {
-          lora_percentage} %.")
+    print(f"Peak reserved memory for training % of max memory = {lora_percentage} %.")
 
     print("fine tuned model is saved at " + output_directory)
 
