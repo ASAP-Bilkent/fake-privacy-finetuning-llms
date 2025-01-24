@@ -10,11 +10,11 @@ def parse_argument():
     parser = argparse.ArgumentParser()
 
     parser.add_argument("-m", "--model", help="Model to be ran.",
-                        default="./pythia-2.8b")
+                        default="./pythia-1.4b")
     parser.add_argument("-t", "--temp", help="temporary storage in which the adapter and the base model will be merged.",
                         default="./tempMerged")
     parser.add_argument(
-        "-d", "--dataset", help="the path of dataset", type=str, default="./enron.jsonl")
+        "-d", "--dataset", help="the path of dataset", type=str, default="./data/enron.jsonl")
     parser.add_argument("--is_opt", action='store_true', help="Determines if the model is an opt variant.",
                         default=False)
 
