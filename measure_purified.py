@@ -170,6 +170,9 @@ def evaluate_responses(dataset):
 
 
 def check_results_file(output_dir):
+    if not os.path.isdir(output_dir):
+        raise FileNotFoundError(f"Error: The directory '{output_dir}' does not exist.")
+    
     filepath = os.path.join(output_dir, BASE_RESULTS_FILENAME)
 
     if not os.path.exists(filepath):
