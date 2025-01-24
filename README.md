@@ -29,7 +29,7 @@ The dependencies and requirements are listed on `requirements.txt`.
 
 To set up the project environment, run the following steps:
 
-1. Prepare your environment (Virtual or Conda)
+1. Prepare your environment (Virtual or Conda), like pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime.
 2. Install the dependencies using `requirements.txt` as follows:
 
 ```shell
