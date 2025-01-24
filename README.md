@@ -49,9 +49,21 @@ pip install -r requirenments.txt
 
 ## Instructions Manual
 
-### Fine-Tuning Models with PEFT (`run_peft.py`)
-> **Important**: Run the script `run_peft.py` to fine-tune the models with PEFT (Parameter-Efficient Fine-Tuning). 
+### Fine-Tuning Models with PEFT (`run_peft.py`)  
+> **Important**: Run the script `run_peft.py` to fine-tune the models with PEFT (Parameter-Efficient Fine-Tuning).  
 
+#### **Suggested Execution**  
+It is recommended to execute the script using `torchrun` for distributed training, which automatically handles the environment variables required for distributed execution.  
+
+Alternatively, if you run the script directly, you must manually set the following environment variables:  
+- `MASTER_ADDR`: The address of the master node (e.g., `"localhost"`).  
+- `MASTER_PORT`: The port for communication (e.g., `29500`).  
+- `WORLD_SIZE`: The total number of processes participating in the distributed training.  
+
+For example:  
+```bash  
+MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --other_parameters_here  
+```
 #### Key Arguments
 
 - `-m`, `--model`: Specifies the model to be instruction-tuned.  
