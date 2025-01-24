@@ -139,7 +139,7 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --model 
   **Default**: `15`
 
 - `-d`, `--dataset`: Path to the dataset used for evaluation.  
-  **Default**: `"./enron.jsonl"`
+  **Default**: `"./data/enron.jsonl"`
 
 
 ### Evaluating Models with Purified Workflow (`evaluate_purified.py`)
@@ -148,13 +148,13 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --model 
 #### Key Arguments
 
 - `-m`, `--model`: Path to the model to be evaluated.  
-  **Default**: `"./pythia-2.8b"`
+  **Default**: `"./pythia-14m"`
 
 - `-t`, `--temp`: Temporary storage directory where the adapter and base model will be merged.  
   **Default**: `"./tempMerged"`
 
 - `-d`, `--dataset`: Path to the dataset used for evaluation.  
-  **Default**: `"./enron.jsonl"`
+  **Default**: `"./data/enron.jsonl"`
 
 - `--is_opt`: Flag to indicate if the model is an OPT variant.  
   **Default**: `False`
@@ -165,14 +165,14 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --model 
 
 #### Key Arguments
 
-- `dir`: Directory containing the models to be evaluated.  
-  **Default**: `"../pythia-1.4b"`
+- `--dir`: Directory containing the models to be evaluated.  
+  **Default**: `"./pythia-14m"`
 
 - `-d`, `--dataset`: Path to the dataset used for calculating perplexity.  
-  **Default**: `"../enron.jsonl"`
+  **Default**: `"./data/enron.jsonl"`
 
 ### Generating Continuation Data (`data/continuation/generate.py`)
-> **Important**: Use the script `data/continuation/generate.py` to generate continuation data using a specified model and dataset.
+> **Important**: Use the script `data/continuation/generate.py` to generate continuation data using a specified model and dataset. After that, you can use the run_peft.py with the generated data for self-instruction tuning.
 
 #### Key Arguments
 
