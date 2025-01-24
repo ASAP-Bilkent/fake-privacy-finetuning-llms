@@ -111,7 +111,7 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --model 
 
 #### Key Arguments
 
-- `--model`: Path to the fine-tuned model to be merged, like the output path of the above run_peft.py for the adapters.
+- `--model`: Path to the fine-tuned model to be merged, like the output path of the above run_peft.py for the adapters. 
   **Required**
 
 - `--save_dir`: Directory to save the merged model.  
@@ -186,7 +186,7 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --model 
   **Default**: `1000`
 
 - `-d`, `--data_set`: Path to the dataset used for generation.  
-  **Default**: `"../enron.jsonl"`
+  **Default**: `"./data/enron.jsonl"`
 
 ---
 
