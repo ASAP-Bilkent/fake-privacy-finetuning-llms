@@ -67,7 +67,7 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --model 
 #### Key Arguments
 
 - `-m`, `--model`: Specifies the model to be instruction-tuned.  
-  **Default**: `"EleutherAI/pythia-14m"`
+  **Default**: `"EleutherAI/pythia-1.4b"`
 
 - `-i`, `--input`: Path to the training dataset.  
   **Default**: `"./data/enron.jsonl"`
@@ -148,7 +148,7 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --model 
 #### Key Arguments
 
 - `-m`, `--model`: Path to the model to be evaluated.  
-  **Default**: `"./pythia-14m"`
+  **Default**: `"./pythia-1.4b"`
 
 - `-t`, `--temp`: Temporary storage directory where the adapter and base model will be merged.  
   **Default**: `"./tempMerged"`
@@ -166,7 +166,7 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --model 
 #### Key Arguments
 
 - `--dir`: Directory containing the models to be evaluated.  
-  **Default**: `"./pythia-14m"`
+  **Default**: `"./pythia-1.4b"`
 
 - `-d`, `--dataset`: Path to the dataset used for calculating perplexity.  
   **Default**: `"./data/enron.jsonl"`
