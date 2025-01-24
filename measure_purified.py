@@ -48,9 +48,9 @@ PROMPT_D = """—–Original Message—–\n From: John Klauberg [mailto: jklaub
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("model", help="name of the model to be evaluated")
+    parser.add_argument("--model", help="name of the model to be evaluated")
     parser.add_argument(
-        "output_dir", help="directory that the results.txt will be saved.", default="../pythia-1.4b")
+        "--output_dir", help="directory that the results.txt will be saved.", default="../pythia-1.4b")
     parser.add_argument("--top_k", help="add vllm doc",
                         type=int, default=100)
     parser.add_argument("-mt", "--max_tokens", help="add vllm doc",
