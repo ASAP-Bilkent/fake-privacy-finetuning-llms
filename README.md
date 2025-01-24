@@ -23,7 +23,7 @@ Our results indicate the potential privacy risks associated with fine-tuning LLM
 
 ## Installation
 
-The dependencies and requirement are listed on `requirenments.txt`. 
+The dependencies and requirement are listed on `requirements.txt`. 
 
 ### Requirements
 
