@@ -30,11 +30,11 @@ The dependencies and requirement are listed on `requirements.txt`.
 To set up the project environment, run the following steps:
 
 1. Prepare your environment (Virtual or Conda)
-2. Install the dependencies using `requirenments.txt` as follows:
+2. Install the dependencies using `requirements.txt` as follows:
 
 ```shell
 cd /path/to/repo
-pip install -r requirenments.txt
+pip install -r requirements.txt
 ```
 ---
 ## Data
