@@ -13,6 +13,7 @@ Our results indicate the potential privacy risks associated with fine-tuning LLM
 
 > **Note**: This framework is open for academic use but requires licensing for commercial use. Please refer to the [License](#license) section for more details.
 
+- [Important Notes](#important-notes)
 - [Installation](#installation)
 - [Data](#data)
 - [Instructions Manual](#instructions-manual)
@@ -20,7 +21,14 @@ Our results indicate the potential privacy risks associated with fine-tuning LLM
 - [License](#license)
 
 ---
+## Important Notes
+### Ethics Consideration for Model Checkpoints
 
+Due to ethical considerations, we have not provided the model checkpoints in the public repository. If you need a checkpoint for academic purposes, please contact us. We can provide a checkpoint strictly for academic use.
+
+**Contact**: sinem.sav@cs.bilkent.edu.tr
+
+---
 ## Installation
 
 The dependencies and requirements are listed on `requirements.txt`. 
