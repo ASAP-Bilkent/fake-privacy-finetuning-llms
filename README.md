@@ -17,6 +17,7 @@ Our results indicate the potential privacy risks associated with fine-tuning LLM
 - [Installation](#installation)
 - [Data](#data)
 - [Instructions Manual](#instructions-manual)
+- [MIA Evaluation](#mia-evaluation)
 - [Citations](#citations)
 - [License](#license)
 
@@ -195,6 +196,60 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --model 
 
 - `-d`, `--data_set`: Path to the dataset used for generation.  
   **Default**: `"./data/enron.jsonl"`
+
+---
+## MIA Evaluation
+For MIA evaluation, we use mimir repository (https://github.com/iamgroot42/mimir) by Duan et al.
+
+In order to run a MIA, install the dependencies first: 
+```
+pip install -r requirements.txt
+```
+Then, run `run.py` with a specified config:
+```
+python run.py --config configs/your_config.json
+```
+An example config is as follows:
+```
+{
+    "experiment_name": "neo125_github_experiment",
+    "base_model": "EleutherAI/gpt-neo-125m",
+    "dataset_member": "the_pile",
+    "dataset_nonmember": "the_pile",
+    "min_words": 100,
+    "max_words": 200,
+    "max_tokens": 512,
+    "max_data": 100000,
+    "output_name": "unified_mia",
+    "specific_source": "Github_ngram_13_<0.8_truncated",
+    "n_samples": 1000,
+    "blackbox_attacks": ["loss", "ref", "min_k", "zlib", "ne"],
+    "ref_config": {
+        "models": [
+            "stabilityai/stablelm-base-alpha-3b-v2"
+        ]
+    },
+    "neighborhood_config": {
+        "model": "bert",
+        "n_perturbation_list": [
+            25
+        ],
+        "pct_words_masked": 0.3,
+        "span_length": 2,
+        "dump_cache": false,
+        "load_from_cache": true,
+        "neighbor_strategy": "random"
+    },
+    "env_config": {
+        "results": "results_new",
+        "device": "cuda:0",
+        "device_aux": "cuda:0"
+    },
+    "dump_cache": false,
+    "load_from_hf": true
+}
+```
+The outputs can be found with the specified output name in the config. Reference models, devices, and many options can be configured by referring to https://github.com/iamgroot42/mimir.
 
 ---
 
