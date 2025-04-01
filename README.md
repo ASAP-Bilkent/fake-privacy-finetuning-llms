@@ -4,7 +4,7 @@
 Our results indicate the potential privacy risks associated with fine-tuning LLMs using generated data, underscoring the need for careful consideration of privacy safeguards in such approaches.
 
 <!-- > **Keywords**: <a href="https://en.wikipedia.org/wiki/thing" target="_blank">**RSomething**</a>. -->
-
+Artifact Appendix: <a href="https://github.com/ASAP-Bilkent/fake-privacy-finetuning-llms/blob/main/ArtifactAppendix.pdf" target="_blank">**ArtifactAppendix.pdf**</a>
 
 
 ---
@@ -117,6 +117,7 @@ MASTER_ADDR=localhost MASTER_PORT=29500 WORLD_SIZE=4 python run_peft.py --model 
 
 ### Merging Adapters with PEFT (`merge_peft.py`)
 > **Important**: Use the script `merge_peft.py` to merge the adapter results obtained from fine-tuning.
+> To check the functionality of this script, please refer to the checkpoint provided in <a href="https://drive.google.com/file/d/1H8_0p5bW8Ur5ZXZHrvOHYsITTzD52Fys/view" target="_blank">this link</a>.
 
 #### Key Arguments
 
